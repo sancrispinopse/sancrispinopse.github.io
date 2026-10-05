@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>37ª Ediz. San Crispino – Ottobre 2026 | Porto Sant'Elpidio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#cbe02d;--pink:#e6007e;--pink-dark:#b80064;--white:#fff;--ink:#222;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:inherit}
+body{font-family:'Montserrat',system-ui,sans-serif;background:var(--lime);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 5%;background:var(--lime);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.logo{font-weight:900;font-size:1.3rem;color:var(--pink);text-transform:uppercase;letter-spacing:-1px}
+nav{display:flex;gap:24px}
+nav a{color:var(--pink);text-decoration:none;font-weight:700;text-transform:uppercase;font-size:.85rem}
+nav a:hover{color:var(--white)}
+.btn{display:inline-block;background:var(--pink);color:var(--white);padding:10px 22px;border-radius:30px;text-decoration:none;font-weight:700;text-transform:uppercase;font-size:.85rem;transition:background .2s,transform .2s}
+.btn:hover{background:var(--pink-dark);transform:translateY(-2px)}
+
+.hero{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px 60px}
+.poster{position:relative;padding:70px 60px;margin:10px 0}
+.poster::before{content:'';position:absolute;inset:0;margin:0 -8%;background:var(--white);clip-path:polygon(10% 0,100% 10%,85% 100%,0 85%);transform:rotate(-3deg);animation:settle .8s ease-out both}
+@keyframes settle{from{transform:rotate(-12deg) scale(.85);opacity:0}to{transform:rotate(-3deg) scale(1);opacity:1}}
+.poster-in{position:relative;z-index:1}
+.ed{font-size:2.2rem;font-weight:900;color:var(--pink);text-transform:uppercase}
+h1{font-size:clamp(3.4rem,11vw,6.5rem);font-weight:900;color:var(--pink);line-height:.85;text-transform:uppercase;letter-spacing:-2px;margin:10px 0}
+.date{font-size:clamp(1.7rem,5vw,2.6rem);font-weight:900;color:var(--pink);text-transform:uppercase;letter-spacing:2px;margin-top:20px}
+
+.count{background:var(--white);padding:28px;border-radius:20px;width:min(600px,100%);margin-top:40px}
+.count h2{color:var(--pink);font-weight:900;font-size:1.1rem;text-transform:uppercase;margin-bottom:16px}
+.timer{display:flex;justify-content:center;gap:16px}
+.tb{background:var(--lime);padding:14px 10px;border-radius:12px;min-width:84px}
+.tb b{display:block;font-size:2.1rem;font-weight:900;color:var(--pink);line-height:1.1}
+.tb span{font-size:.72rem;font-weight:700;text-transform:uppercase}
+#live{display:none;color:var(--pink);font-weight:900;font-size:1.3rem}
+
+.sec{padding:80px 10%;background:var(--white)}
+.sec.alt{background:var(--lime)}
+.sec h2.t{font-size:clamp(1.8rem,5vw,2.5rem);font-weight:900;color:var(--pink);text-transform:uppercase;text-align:center;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;max-width:1100px;margin:0 auto}
+.card{background:var(--lime);padding:30px;border-radius:16px}
+.card h3{font-size:1.3rem;font-weight:900;color:var(--pink);text-transform:uppercase;margin-bottom:12px}
+.empty{max-width:640px;margin:0 auto;text-align:center;background:var(--white);padding:36px;border-radius:16px}
+.empty p{margin-bottom:20px}
+
+.partners{padding:50px 5%;text-align:center;background:var(--lime);border-top:2px solid rgba(230,0,126,.2)}
+.partners h2{color:var(--pink);font-weight:900;text-transform:uppercase;font-size:1.1rem;margin-bottom:26px}
+.pg{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:1100px;margin:0 auto}
+.pg div{font-weight:700;color:var(--pink);font-size:.8rem;text-transform:uppercase;border:2px solid var(--pink);padding:10px 16px;border-radius:8px}
+
+footer{background:var(--pink);color:var(--white);text-align:center;padding:20px 20px calc(20px + env(safe-area-inset-bottom,0px));font-weight:700;font-size:.9rem}
+
+@media(max-width:768px){nav{display:none}.poster{padding:50px 36px}.ed{font-size:1.5rem}.timer{gap:8px}.tb{min-width:70px}.sec{padding:60px 6%}}
+@media(prefers-reduced-motion:reduce){.poster::before{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SanCrispino Eventi</div>
+  <nav>
+    <a href="#evento">L'evento</a>
+    <a href="#programma">Programma</a>
+    <a href="#partner">Partner</a>
+  </nav>
+  <a href="#programma" class="btn">Scopri di più</a>
+</header>
+
+<section class="hero">
+  <div class="poster">
+    <div class="poster-in">
+      <div class="ed">37ª Ediz.</div>
+      <h1>San<br>Cris<br>pino</h1>
+    </div>
+  </div>
+  <div class="date">Ottobre 2026</div>
+
+  <div class="count" aria-live="polite">
+    <h2 id="ctitle">Mancano all'inizio</h2>
+    <div class="timer" id="timer">
+      <div class="tb"><b id="d">00</b><span>Giorni</span></div>
+      <div class="tb"><b id="h">00</b><span>Ore</span></div>
+      <div class="tb"><b id="m">00</b><span>Minuti</span></div>
+    </div>
+    <div id="live">La festa è iniziata!</div>
+  </div>
+</section>
+
+<section class="sec" id="evento">
+  <h2 class="t">La festa della città</h2>
+  <div class="grid">
+    <div class="card"><h3>Tradizione e cultura</h3><p>I festeggiamenti in onore del patrono San Crispino a Porto Sant'Elpidio, un appuntamento per tutta la comunità marchigiana.</p></div>
+    <div class="card"><h3>Enogastronomia</h3><p>Stand gastronomici, specialità locali e il meglio dell'artigianato del territorio fermano.</p></div>
+    <div class="card"><h3>Musica e spettacoli</h3><p>Concerti dal vivo, intrattenimento per le famiglie e ospiti per tutta la durata della festa.</p></div>
+  </div>
+</section>
+
+<section class="sec alt" id="programma">
+  <h2 class="t">Programma</h2>
+  <div class="empty">
+    <p>Date, orari e ospiti della 37ª edizione sono in via di definizione. Torna presto: il programma completo sarà pubblicato qui.</p>
+    <a class="btn" href="#partner">Vedi chi sostiene la festa</a>
+  </div>
+</section>
+
+<section class="partners" id="partner">
+  <h2>Con il patrocinio e il sostegno di</h2>
+  <div class="pg">
+    <div>Comune di Porto Sant'Elpidio</div>
+    <div>Regione Marche</div>
+    <div>Provincia di Fermo</div>
+    <div>Fondazione Cassa di Risparmio di Fermo</div>
+    <div>CNA Artigiani Imprenditori Fermo</div>
+    <div>Media Partner Radio FM</div>
+  </div>
+</section>
+
+<footer>&copy; 2026 San Crispino Eventi – Città di Porto Sant'Elpidio</footer>
+
+<script>
+// Data di inizio: modificala qui (anno, mese 0-11, giorno, ora)
+const target = new Date(2026, 9, 25, 0, 0, 0).getTime();
+const pad = n => String(n).padStart(2, '0');
+function tick(){
+  const diff = target - Date.now();
+  if (diff <= 0){
+    document.getElementById('timer').style.display = 'none';
+    document.getElementById('ctitle').style.display = 'none';
+    document.getElementById('live').style.display = 'block';
+    return;
+  }
+  document.getElementById('d').textContent = pad(Math.floor(diff / 864e5));
+  document.getElementById('h').textContent = pad(Math.floor(diff % 864e5 / 36e5));
+  document.getElementById('m').textContent = pad(Math.floor(diff % 36e5 / 6e4));
+}
+tick(); setInterval(tick, 1000);
+</script>
+</body>
+</html>

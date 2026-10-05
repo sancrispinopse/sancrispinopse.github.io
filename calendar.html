@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="it" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SanCrispino2026 | 37° Festa del Patrono - Porto Sant'Elpidio</title>
+
+    <!-- Meta SEO & Social Sharing -->
+    <meta name="description" content="Programma ufficiale della 37° Festa del Patrono San Crispino a Porto Sant'Elpidio. 2 Ottobre - 8 Novembre 2026. Concerti, eventi, gastronomia e tradizione.">
+    <meta property="og:title" content="SanCrispino2026 - Festa del Patrono Porto Sant'Elpidio">
+    <meta property="og:description" content="Scopri il programma completo con Giusy Ferreri, Dance All Night, StoccoFest, Premiu de lu Cazolà e molto altro!">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f0f13',
+                            card: '#16161f',
+                            cardHover: '#1e1e2b',
+                            border: '#282838',
+                            acid: '#c2f802',
+                            acidHover: '#a3d400',
+                            magenta: '#ff007f',
+                            magentaHover: '#d9006c',
+                            cyan: '#00f0ff',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-acid': '0 0 20px rgba(194, 248, 2, 0.35)',
+                        'neon-magenta': '0 0 20px rgba(255, 0, 127, 0.4)',
+                        'glow-sm': '0 0 10px rgba(194, 248, 2, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar & glassmorphism styling */
+        body {
+            background-color: #0f0f13;
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Hide horizontal scrollbar while keeping scroll functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .glass-panel {
+            background: rgba(22, 22, 31, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 38, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .text-gradient-acid {
+            background: linear-gradient(135deg, #c2f802 0%, #00f0ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-magenta {
+            background: linear-gradient(135deg, #ff007f 0%, #ff8800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Animated Pulsing Glow */
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .animate-glow {
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+
+        /* Active Date Item Highlight Effect */
+        .date-ribbon-item.active {
+            background: linear-gradient(135deg, #c2f802 0%, #8ebd00 100%);
+            color: #0f0f13 !important;
+            font-weight: 800;
+            box-shadow: 0 0 15px rgba(194, 248, 2, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brand-acid selection:text-black">
+
+    <!-- TOP NAVIGATION / BRAND HEADER -->
+    <header class="sticky top-0 z-40 w-full glass-panel border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            
+            <!-- Logo Badge & Title -->
+            <a href="#" onclick="showAllEvents(); return false;" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-magenta to-brand-acid p-[2px] shadow-neon-acid transition-transform group-hover:scale-105">
+                    <div class="w-full h-full bg-brand-dark rounded-[10px] flex items-center justify-center font-display font-black text-brand-acid text-xl">
+                        SC
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-display font-black text-lg md:text-xl tracking-tight text-white group-hover:text-brand-acid transition-colors">
+                            SanCrispino<span class="text-brand-acid">2026</span>
+                        </span>
+                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-magenta/20 text-brand-magenta border border-brand-magenta/30 uppercase tracking-widest">
+                            37° Edizione
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-400 font-medium tracking-wide">
+                        Porto Sant'Elpidio • 2 Ott - 8 Nov 2026
+                    </p>
+                </div>
+            </a>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-2">
+                <!-- Favorites Toggle Button -->
+                <button id="favTabBtn" onclick="toggleFavoritesView()" class="relative flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 hover:border-brand-magenta/50 text-xs font-semibold text-gray-300 hover:text-white transition-all">
+                    <i class="fa-solid fa-heart text-brand-magenta"></i>
+                    <span class="hidden sm:inline">Preferiti</span>
+                    <span id="favCounter" class="ml-0.5 px-1.5 py-0.2 bg-brand-magenta text-white font-bold text-[10px] rounded-full">0</span>
+                </button>
+
+                <!-- IG Share Shortcut -->
+                <button onclick="shareWebsite()" title="Condividi Festa" class="p-2 rounded-xl bg-white/5 border border-white/10 hover:border-brand-acid text-brand-acid transition-all">
+                    <i class="fa-solid fa-share-nodes text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-4 space-y-6">
+
+        <!-- HERO BANNER / LINK IN BIO TOPPER -->
+        <section class="relative overflow-hidden rounded-3xl glass-card p-6 md:p-8 border border-white/10 bg-gradient-to-br from-brand-card via-brand-dark to-black">
+            <!-- Neon background glows -->
+            <div class="absolute -top-24 -left-24 w-60 h-60 bg-brand-acid/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-brand-magenta/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-acid/10 border border-brand-acid/30 text-brand-acid text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-star text-[10px]"></i> Programma Ufficiale San Crispino
+                    </div>
+                    <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+                        La Grande Festa di <br class="hidden sm:inline"><span class="text-gradient-acid">Porto Sant'Elpidio</span>
+                    </h1>
+                    <p class="text-sm md:text-base text-gray-300">
+                        Musica live, concerti, tradizione calzaturiera, StoccoFest, enogastronomia e tanto divertimento per tutte le età.
+                    </p>
+                    
+                    <!-- Quick Specs / Badges -->
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-2">
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-music text-brand-magenta"></i> Concerti Gratuiti
+                        </span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-utensils text-brand-acid"></i> StoccoFest
+                        </span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-shoe-prints text-brand-cyan"></i> Premio Cazolà
+                        </span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-fireworks text-amber-400"></i> Spettacoli Pirotecnici
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Next Big Event Card Showcase -->
+                <div id="countdownBox" class="w-full md:w-auto min-w-[280px] sm:min-w-[320px] p-4 rounded-2xl glass-panel border border-brand-magenta/30 text-center space-y-2 shadow-neon-magenta">
+                    <p class="text-[11px] uppercase tracking-widest text-brand-magenta font-extrabold flex items-center justify-center gap-1.5">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-magenta opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-magenta"></span>
+                        </span>
+                        Prossimo Evento Clou
+                    </p>
+                    <h3 id="nextEventTitle" class="font-display font-extrabold text-lg text-white line-clamp-1">
+                        Giusy Ferreri in Concerto
+                    </h3>
+                    <p id="nextEventDate" class="text-xs text-gray-300">
+                        Sabato 17 Ottobre • Piazza Garibaldi
+                    </p>
+
+                    <!-- Timer Grid -->
+                    <div class="grid grid-cols-4 gap-2 pt-2 text-center">
+                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                            <span id="timerDays" class="block font-display font-black text-lg text-brand-acid">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Giorni</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                            <span id="timerHours" class="block font-display font-black text-lg text-brand-acid">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Ore</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                            <span id="timerMins" class="block font-display font-black text-lg text-brand-acid">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Min</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                            <span id="timerSecs" class="block font-display font-black text-lg text-brand-magenta">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Sec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STICKY HORIZONTAL DATE SELECTOR RIBBON (Mobile-First Swipeable) -->
+        <section class="sticky top-[61px] z-30 py-2 -mx-4 px-4 bg-brand-dark/90 backdrop-blur-xl border-y border-white/10">
+            <div class="max-w-6xl mx-auto flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-acid flex items-center gap-1">
+                        <i class="fa-solid fa-calendar-days"></i> Calendario Date
+                    </span>
+                    <span id="selectedDateLabel" class="text-xs font-semibold text-gray-400">
+                        (Tutti gli eventi)
+                    </span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <button onclick="scrollRibbon(-200)" class="p-1 px-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 text-xs">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button onclick="scrollRibbon(200)" class="p-1 px-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 text-xs">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Date Buttons Ribbon Container -->
+            <div id="dateRibbon" class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 scroll-smooth">
+                <!-- All Events Shortcut Pill -->
+                <button onclick="selectDate('ALL')" id="datePill-ALL" class="date-ribbon-item active shrink-0 px-4 py-2 rounded-2xl border border-white/10 bg-white/5 text-xs font-semibold flex flex-col items-center justify-center min-w-[70px] transition-all">
+                    <span class="text-[10px] uppercase tracking-wider text-gray-400">Festa</span>
+                    <span class="font-extrabold text-sm">TUTTI</span>
+                </button>
+
+                <!-- Highlights Shortcut Pill -->
+                <button onclick="selectHighlights()" id="datePill-HIGHLIGHTS" class="date-ribbon-item shrink-0 px-4 py-2 rounded-2xl border border-brand-magenta/40 bg-brand-magenta/10 text-brand-magenta hover:bg-brand-magenta/20 text-xs font-semibold flex flex-col items-center justify-center min-w-[85px] transition-all">
+                    <span class="text-[10px] uppercase tracking-wider text-brand-magenta">⭐ Top</span>
+                    <span class="font-extrabold text-xs">EVIDENZA</span>
+                </button>
+
+                <!-- Dynamic Date Pills injected via JS -->
+            </div>
+        </section>
+
+        <!-- SEARCH BAR & CATEGORY FILTERS -->
+        <section class="space-y-3">
+            <div class="flex flex-col md:flex-row gap-3 items-center justify-between">
+                
+                <!-- Search Input -->
+                <div class="relative w-full md:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                    <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Cerca artista, luogo, evento..." 
+                           class="w-full pl-10 pr-9 py-2.5 rounded-2xl glass-card text-xs md:text-sm text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:border-brand-acid transition-all">
+                    <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white text-xs">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Category Tag Pills -->
+                <div id="categoryPills" class="w-full md:w-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1">
+                    <!-- Dynamic Category buttons injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS GRID SECTION -->
+        <section class="space-y-4">
+            
+            <!-- Section Title & Counter Bar -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div class="flex items-center gap-2">
+                    <h2 id="viewHeading" class="font-display text-xl md:text-2xl font-bold text-white flex items-center gap-2">
+                        Tutti gli Eventi
+                    </h2>
+                    <span id="eventCountBadge" class="px-2.5 py-0.5 rounded-full bg-brand-acid/20 text-brand-acid text-xs font-extrabold border border-brand-acid/30">
+                        0
+                    </span>
+                </div>
+
+                <!-- Reset Filters Option -->
+                <button onclick="resetAllFilters()" id="resetFiltersBtn" class="hidden text-xs text-brand-magenta hover:underline flex items-center gap-1 font-semibold">
+                    <i class="fa-solid fa-rotate-left"></i> Mostra tutti
+                </button>
+            </div>
+
+            <!-- Event Cards Grid -->
+            <div id="eventsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Event cards injected via JS -->
+            </div>
+
+            <!-- Empty State Message -->
+            <div id="emptyState" class="hidden text-center py-12 glass-panel rounded-3xl border border-white/10 space-y-3">
+                <i class="fa-regular fa-calendar-xmark text-4xl text-gray-500"></i>
+                <h3 class="text-lg font-bold text-white">Nessun evento trovato</h3>
+                <p class="text-xs text-gray-400 max-w-md mx-auto">Non ci sono appuntamenti corrispondenti ai criteri o alla data selezionata.</p>
+                <button onclick="resetAllFilters()" class="px-4 py-2 bg-brand-acid text-black font-bold text-xs rounded-xl hover:bg-brand-acidHover transition-all">
+                    Mostra Tutti gli Eventi
+                </button>
+            </div>
+        </section>
+
+        <!-- MULTI-DAY & CONTINUOUS INITIATIVES SECTION -->
+        <section class="space-y-4 pt-6 border-t border-white/10">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-magenta">Iniziative Continue</span>
+                    <h2 class="font-display text-xl md:text-2xl font-black text-white">
+                        Mostre & Rassegne la Festa
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- StoccoFest Card -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-brand-acid/50 transition-all">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-brand-acid text-black font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
+                        18 OTT - 1 NOV
+                    </div>
+                    <div class="space-y-2">
+                        <div class="w-10 h-10 rounded-xl bg-brand-acid/10 border border-brand-acid/30 flex items-center justify-center text-brand-acid text-lg">
+                            <i class="fa-solid fa-fish-fins"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white group-hover:text-brand-acid transition-colors">
+                            PORTO SANT'ELPIDIO STOCCOFEST
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            La tradizione dello stoccafisso protagonista nei ristoranti aderenti della città. Degustazioni, menù speciali e ricette tradizionali.
+                        </p>
+                        <div class="pt-2 text-[11px] text-gray-400 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-utensils text-brand-acid"></i> Ristoranti Aderenti Cittadini
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pesca di Beneficenza Card -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-brand-magenta/50 transition-all">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-brand-magenta text-white font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
+                        15 - 25 OTTOBRE
+                    </div>
+                    <div class="space-y-2">
+                        <div class="w-10 h-10 rounded-xl bg-brand-magenta/10 border border-brand-magenta/30 flex items-center justify-center text-brand-magenta text-lg">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white group-hover:text-brand-magenta transition-colors">
+                            Pesca di Beneficenza
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            A cura dell'Associazione "Il Samaritano". Un gesto di solidarietà per sostenere i progetti sociali e di accoglienza locali.
+                        </p>
+                        <div class="pt-2 text-[11px] text-gray-400 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-location-dot text-brand-magenta"></i> Corso Cesare Battisti
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brain Run Card -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-brand-cyan/50 transition-all">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-brand-cyan text-black font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
+                        15 - 23 MAGGIO 2027
+                    </div>
+                    <div class="space-y-2">
+                        <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center text-brand-cyan text-lg">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white group-hover:text-brand-cyan transition-colors">
+                            BRAIN RUN & Trofeo Moretti
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            Una settimana per la sensibilizzazione sulla S.L.A. Conclusione il 23 Maggio 2027 con il 6° Trofeo Podistica Moretti Corva.
+                        </p>
+                        <div class="pt-2 text-[11px] text-gray-400 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-flag-checkered text-brand-cyan"></i> Corva di Porto Sant'Elpidio
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- EVENT DETAIL MODAL -->
+    <div id="eventModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
+        <div class="relative w-full max-w-xl max-h-[90vh] overflow-y-auto glass-panel border border-white/15 rounded-3xl p-6 space-y-5 shadow-2xl">
+            
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white flex items-center justify-center transition-all">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Modal Header / Category -->
+            <div class="space-y-2">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span id="modalCategory" class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-acid text-black">
+                        Categoria
+                    </span>
+                    <span id="modalHighlightBadge" class="hidden px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-magenta text-white">
+                        <i class="fa-solid fa-star"></i> Evento Clou
+                    </span>
+                </div>
+
+                <h3 id="modalTitle" class="font-display text-2xl md:text-3xl font-black text-white leading-tight">
+                    Titolo Evento
+                </h3>
+            </div>
+
+            <!-- Date, Time & Location Box -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 text-xs">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-acid/10 border border-brand-acid/30 text-brand-acid flex items-center justify-center shrink-0">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 font-medium">Data e Ora</p>
+                        <p id="modalDateTime" class="font-bold text-white text-sm">--</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-magenta/10 border border-brand-magenta/30 text-brand-magenta flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 font-medium">Luogo</p>
+                        <p id="modalLocation" class="font-bold text-white text-sm">--</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Description -->
+            <div class="space-y-2">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400">Dettagli dell'evento</h4>
+                <p id="modalDescription" class="text-sm text-gray-200 leading-relaxed">
+                    Descrizione completa.
+                </p>
+            </div>
+
+            <!-- Action Buttons Grid -->
+            <div class="space-y-2 pt-2 border-t border-white/10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <!-- Google Calendar Link -->
+                    <a id="modalCalendarBtn" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-brand-acid text-black hover:bg-brand-acidHover font-bold text-xs flex items-center justify-center gap-2 transition-all">
+                        <i class="fa-regular fa-calendar-plus"></i> Aggiungi a Google Cal
+                    </a>
+
+                    <!-- Google Maps Directions -->
+                    <a id="modalMapBtn" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 border border-white/10 transition-all">
+                        <i class="fa-solid fa-map-location-dot text-brand-magenta"></i> Mappa & Indicazioni
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                    <!-- Share WhatsApp -->
+                    <a id="modalWhatsappBtn" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 font-semibold text-xs flex items-center justify-center gap-2 border border-emerald-500/30 transition-all">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                    </a>
+
+                    <!-- Copy Event Link -->
+                    <button id="modalCopyBtn" onclick="copyEventLink()" class="py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 font-semibold text-xs flex items-center justify-center gap-2 border border-white/10 transition-all">
+                        <i class="fa-solid fa-link text-sm"></i> Copia Link
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER & ORGANIZER INFO -->
+    <footer class="w-full glass-panel border-t border-white/10 mt-12 py-8 px-4 text-xs text-gray-400">
+        <div class="max-w-6xl mx-auto space-y-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+                
+                <!-- Col 1: Organizer Info -->
+                <div class="space-y-2">
+                    <h4 class="font-display font-black text-sm text-white uppercase tracking-wider">
+                        Organizzazione
+                    </h4>
+                    <p class="font-semibold text-gray-300">Associazione Culturale San Crispino Eventi</p>
+                    <p class="flex items-center justify-center md:justify-start gap-1.5 text-gray-400">
+                        <i class="fa-solid fa-location-dot text-brand-acid"></i> Via Solferino 72, 63821 Porto Sant'Elpidio (FM)
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start gap-1.5 text-gray-400">
+                        <i class="fa-solid fa-envelope text-brand-magenta"></i> sancrispinoeventi@gmail.com
+                    </p>
+                </div>
+
+                <!-- Col 2: Social Links -->
+                <div class="space-y-2">
+                    <h4 class="font-display font-black text-sm text-white uppercase tracking-wider">
+                        Seguici Sui Social
+                    </h4>
+                    <p class="text-gray-400">Resta aggiornato su cambi programma ed eventi speciali live.</p>
+                    <div class="flex items-center justify-center md:justify-start gap-3 pt-1">
+                        <a href="https://www.facebook.com" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-acid hover:border-brand-acid transition-all">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-magenta hover:border-brand-magenta transition-all">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-cyan hover:border-brand-cyan transition-all">
+                            <i class="fa-brands fa-tiktok text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 3: Patron Saint & City badge -->
+                <div class="space-y-2 md:text-right flex flex-col items-center md:items-end justify-center">
+                    <div class="p-3 rounded-2xl bg-gradient-to-r from-brand-acid/10 to-brand-magenta/10 border border-white/10 max-w-xs text-center md:text-right">
+                        <p class="font-display font-extrabold text-white text-sm">Porto Sant'Elpidio 2026</p>
+                        <p class="text-[11px] text-gray-400">Città delle calzature e della grande festa di ottobre</p>
+                    </div>
+                    <p class="text-[10px] text-gray-500 pt-2">© 2026 SanCrispino2026. Tutti i diritti riservati.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 glass-panel px-4 py-3 rounded-2xl border border-brand-acid/50 text-white font-semibold text-xs flex items-center gap-2.5 shadow-2xl pointer-events-none">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-brand-acid text-base"></i>
+        <span id="toastMsg">Messaggio di notifica</span>
+    </div>
+
+    <script>
+        // COMPLETE EVENT DATABASE FOR SAN CRISPINO 2026
+        const EVENTS = [
+            // FRIDAY 2 OCT
+            {
+                id: "evt-02-1",
+                date: "2026-10-02",
+                dayDisplay: "Ven 2 Ott",
+                dayNum: 2,
+                month: "Ott",
+                time: "17:00",
+                location: "Polo culturale Beniamino Gigli",
+                title: "Inaugurazione mostra pittorica Anastasia Lanciotti",
+                description: "Vernissage e apertura ufficiale della mostra pittorica dell'artista Anastasia Lanciotti.",
+                category: "Arte",
+                highlight: false
+            },
+            {
+                id: "evt-02-2",
+                date: "2026-10-02",
+                dayDisplay: "Ven 2 Ott",
+                dayNum: 2,
+                month: "Ott",
+                time: "21:15",
+                location: "Polo culturale Beniamino Gigli",
+                title: "Presentazione libro \"L'elefantino Rosa\"",
+                description: "Presentazione del libro di Lorena Rosini e Salvatore Coppola. Conduce la serata la giornalista Marisa Colibazzi.",
+                category: "Cultura",
+                highlight: false
+            },
+
+            // SUNDAY 4 OCT
+            {
+                id: "evt-04-1",
+                date: "2026-10-04",
+                dayDisplay: "Dom 4 Ott",
+                dayNum: 4,
+                month: "Ott",
+                time: "07:30 / 09:00",
+                location: "Pineta zona nord",
+                title: "CICLOSKATENATA in mountain bike & Gravel",
+                description: "Ritrovo ore 07:30, Partenza ore 09:00. Raduno MTB e fantastico percorso Gravel di 80 km tra i panorami marchigiani. A cura dell'ASD Skatenaty.",
+                category: "Sport",
+                highlight: false
+            },
+            {
+                id: "evt-04-2",
+                date: "2026-10-04",
+                dayDisplay: "Dom 4 Ott",
+                dayNum: 4,
+                month: "Ott",
+                time: "17:00",
+                location: "Polo culturale Beniamino Gigli",
+                title: "Docu-cortometraggio \"Raccontami, 'O Mare\"",
+                description: "Prima proiezione assoluta del docu-cortometraggio 'Raccontami, 'O Mare' ideato e diretto da Samuel Pio Santoro.",
+                category: "Cultura",
+                highlight: false
+            },
+            {
+                id: "evt-04-3",
+                date: "2026-10-04",
+                dayDisplay: "Dom 4 Ott",
+                dayNum: 4,
+                month: "Ott",
+                time: "21:15",
+                location: "Chiesa SS Annunziata",
+                title: "San Francesco e i santi Francescani delle Marche",
+                description: "Spettacolo musicale evocativo con il gruppo Divivaluce. In occasione del 40° anniversario della Protezione Civile.",
+                category: "Musica",
+                highlight: false
+            },
+
+            // FRIDAY 9 OCT
+            {
+                id: "evt-09-1",
+                date: "2026-10-09",
+                dayDisplay: "Ven 9 Ott",
+                dayNum: 9,
+                month: "Ott",
+                time: "dalle 19:00",
+                location: "Via Cesare Battisti",
+                title: "OKTOBER BEER FEST - Serata 1",
+                description: "Festa della birra con street food, musica e specialità bavarese. A cura de 'Gli Amici di Cesare'.",
+                category: "Enogastronomia",
+                highlight: false
+            },
+
+            // SATURDAY 10 OCT
+            {
+                id: "evt-10-1",
+                date: "2026-10-10",
+                dayDisplay: "Sab 10 Ott",
+                dayNum: 10,
+                month: "Ott",
+                time: "16:30",
+                location: "Polo culturale Beniamino Gigli",
+                title: "Mostra fotografica \"FEMMINILE SINGOLARE PLURALE\"",
+                description: "Inaugurazione mostra fotografica a cura di CPO Porto Sant'Elpidio e Associazione Infinitae.",
+                category: "Cultura",
+                highlight: false
+            },
+            {
+                id: "evt-10-2",
+                date: "2026-10-10",
+                dayDisplay: "Sab 10 Ott",
+                dayNum: 10,
+                month: "Ott",
+                time: "dalle 19:00",
+                location: "Via Cesare Battisti",
+                title: "OKTOBER BEER FEST - Serata 2",
+                description: "Seconda serata di birra, cibo tipico, intrattenimento musicale e tanta allegria a cura de 'Gli Amici di Cesare'.",
+                category: "Enogastronomia",
+                highlight: false
+            },
+
+            // SUNDAY 11 OCT
+            {
+                id: "evt-11-1",
+                date: "2026-10-11",
+                dayDisplay: "Dom 11 Ott",
+                dayNum: 11,
+                month: "Ott",
+                time: "08:00",
+                location: "Piazza Garibaldi",
+                title: "Happy Run 39 - Trofeo Città di Porto Sant'Elpidio",
+                description: "Gara podistica e camminata ludico-motoria aperta a tutti. A cura di ASD Atletica Porto Sant'Elpidio.",
+                category: "Sport",
+                highlight: false
+            },
+            {
+                id: "evt-11-2",
+                date: "2026-10-11",
+                dayDisplay: "Dom 11 Ott",
+                dayNum: 11,
+                month: "Ott",
+                time: "17:00",
+                location: "Polo culturale Beniamino Gigli",
+                title: "THE ULTIMATE CROCHET CHALLENGE - 1° Trofeo Uncinetto",
+                description: "La prima grande sfida di uncinetto della città! Un pomeriggio creativo con laboratori e premiazioni.",
+                category: "Tradizione",
+                highlight: false
+            },
+            {
+                id: "evt-11-3",
+                date: "2026-10-11",
+                dayDisplay: "Dom 11 Ott",
+                dayNum: 11,
+                month: "Ott",
+                time: "dalle 19:00",
+                location: "Via Cesare Battisti",
+                title: "OKTOBER BEER FEST - Gran Finale",
+                description: "Ultimo appuntamento con la festa della birra e dello street food targata Gli Amici di Cesare.",
+                category: "Enogastronomia",
+                highlight: false
+            },
+
+            // FRIDAY 16 OCT
+            {
+                id: "evt-16-1",
+                date: "2026-10-16",
+                dayDisplay: "Ven 16 Ott",
+                dayNum: 16,
+                month: "Ott",
+                time: "09:00",
+                location: "I.I.S. Carlo Urbani",
+                title: "Incontro di prevenzione con Dott.ssa Monica Calcagni",
+                description: "Incontro formativo della nota ginecologa Dott.ssa Monica Calcagni rivolto agli studenti dell'istituto.",
+                category: "Sociale",
+                highlight: false
+            },
+            {
+                id: "evt-16-2",
+                date: "2026-10-16",
+                dayDisplay: "Ven 16 Ott",
+                dayNum: 16,
+                month: "Ott",
+                time: "18:00",
+                location: "Centro città",
+                title: "Accensione Solenne delle Luminarie",
+                description: "Apertura ufficiale del periodo di festa con l'accensione delle luminarie artistiche nel centro cittadino.",
+                category: "Tradizione",
+                highlight: false
+            },
+            {
+                id: "evt-16-3",
+                date: "2026-10-16",
+                dayDisplay: "Ven 16 Ott",
+                dayNum: 16,
+                month: "Ott",
+                time: "21:15",
+                location: "Teatro delle Api",
+                title: "Incontro e Libro \"Il mio viaggio a fianco delle donne\"",
+                description: "Presentazione e dibattito con la Dott.ssa Monica Calcagni. Offerta minima 10€, prenotazioni al 375-9804028.",
+                category: "Cultura",
+                highlight: false
+            },
+
+            // SATURDAY 17 OCT
+            {
+                id: "evt-17-1",
+                date: "2026-10-17",
+                dayDisplay: "Sab 17 Ott",
+                dayNum: 17,
+                month: "Ott",
+                time: "16:00",
+                location: "Piazza Garibaldi",
+                title: "Viva 2026! Settimana Rianimazione Cardiopolmonare",
+                description: "Dimostrazioni di primo soccorso, massaggio cardiaco e uso del defibrillatore a cura della Croce Verde.",
+                category: "Sociale",
+                highlight: false
+            },
+            {
+                id: "evt-17-2",
+                date: "2026-10-17",
+                dayDisplay: "Sab 17 Ott",
+                dayNum: 17,
+                month: "Ott",
+                time: "21:45",
+                location: "Piazza Garibaldi",
+                title: "CONCERTO DI GIUSY FERRERI",
+                description: "Il grande concerto live di Giusy Ferreri a Porto Sant'Elpidio! Tutti i grandi successi per la serata regina della festa. Ingresso completamente libero.",
+                category: "Musica",
+                highlight: true
+            },
+            {
+                id: "evt-17-3",
+                date: "2026-10-17",
+                dayDisplay: "Sab 17 Ott",
+                dayNum: 17,
+                month: "Ott",
+                time: "00:30",
+                location: "Via Cesare Battisti (Torrefazione Trobbiani)",
+                title: "Spaghetti a Detroit - Night Live Session",
+                description: "Dopoconcerto live e intrattenimento musicale per tirare tardi tra amici e buona musica.",
+                category: "Musica",
+                highlight: false
+            },
+
+            // SUNDAY 18 OCT
+            {
+                id: "evt-18-1",
+                date: "2026-10-18",
+                dayDisplay: "Dom 18 Ott",
+                dayNum: 18,
+                month: "Ott",
+                time: "10:00",
+                location: "Polo culturale Beniamino Gigli",
+                title: "DONNE IN ROSA, Medaglie azzurre",
+                description: "Incontro e testimonianze dedicate alle donne, alla prevenzione e alle eccellenze sportive e sociali.",
+                category: "Sociale",
+                highlight: false
+            },
+            {
+                id: "evt-18-2",
+                date: "2026-10-18",
+                dayDisplay: "Dom 18 Ott",
+                dayNum: 18,
+                month: "Ott",
+                time: "dalle 10:00",
+                location: "Via Principe Umberto e Via Cesare Battisti",
+                title: "Mercatino LE PIAZZETTE dei mestieri e dei sapori",
+                description: "Bancarelle di artigianato tipico, prodotti a km zero, antichi mestieri e curiosità per le vie del centro.",
+                category: "Tradizione",
+                highlight: false
+            },
+            {
+                id: "evt-18-3",
+                date: "2026-10-18",
+                dayDisplay: "Dom 18 Ott",
+                dayNum: 18,
+                month: "Ott",
+                time: "15:00",
+                location: "Piazza Garibaldi",
+                title: "29° PREMIU DE LU CAZOLA' + Spettacolo MARCO MARZOCCA",
+                description: "Premio CNA Fermo - 5° Memorial Giorgio Iachini dedicato ai calzaturieri. Conducono Paolo Balestrieri e Lucia Gallucci. Spettacolo comico con MARCO MARZOCCA!",
+                category: "Spettacolo",
+                highlight: true
+            },
+
+            // MONDAY 19 OCT
+            {
+                id: "evt-19-1",
+                date: "2026-10-19",
+                dayDisplay: "Lun 19 Ott",
+                dayNum: 19,
+                month: "Ott",
+                time: "21:15",
+                location: "Teatro delle Api",
+                title: "Michele Padovano presenta \"Tra la Champions e la libertà\"",
+                description: "Presentazione del libro autobiografico dell'ex calciatore della Juventus e Nazionale. Modera il giornalista Maikol Di Stefano. Ingresso gratuito.",
+                category: "Cultura",
+                highlight: false
+            },
+
+            // TUESDAY 20 OCT
+            {
+                id: "evt-20-1",
+                date: "2026-10-20",
+                dayDisplay: "Mar 20 Ott",
+                dayNum: 20,
+                month: "Ott",
+                time: "21:15",
+                location: "Polo culturale Beniamino Gigli",
+                title: "\"Il mondo è un posto bellissimo\" - In bici Italia-Mongolia",
+                description: "Racconti di viaggio, diapositive ed emozioni dell'incredibile avventura su due ruote di Rudy Di Flavio.",
+                category: "Cultura",
+                highlight: false
+            },
+
+            // WEDNESDAY 21 OCT
+            {
+                id: "evt-21-1",
+                date: "2026-10-21",
+                dayDisplay: "Mer 21 Ott",
+                dayNum: 21,
+                month: "Ott",
+                time: "21:15",
+                location: "Polo culturale Beniamino Gigli",
+                title: "Alla scoperta di P.S. Elpidio: Storie e Aneddoti",
+                description: "Viaggio nella memoria e nelle curiosità della storia elpidiense con Francesco Pacini e la Prof.ssa Patrizia Baglioni.",
+                category: "Tradizione",
+                highlight: false
+            },
+
+            // THURSDAY 22 OCT
+            {
+                id: "evt-22-1",
+                date: "2026-10-22",
+                dayDisplay: "Gio 22 Ott",
+                dayNum: 22,
+                month: "Ott",
+                time: "20:30",
+                location: "Ristoranti Aderenti",
+                title: "Cooking Show & Degustazione Stoccafisso",
+                description: "Apertura speciale dello StoccoFest con cooking show dal vivo di chef locali e degustazione guidata di stoccafisso.",
+                category: "Enogastronomia",
+                highlight: false
+            },
+
+            // FRIDAY 23 OCT
+            {
+                id: "evt-23-1",
+                date: "2026-10-23",
+                dayDisplay: "Ven 23 Ott",
+                dayNum: 23,
+                month: "Ott",
+                time: "17:00",
+                location: "Lu campittu de li preti",
+                title: "7° TROFEO SAN CRISPINO + Contest di Dolci",
+                description: "Storico torneo di calcetto interparrocchiale seguito dalla gara casalinga dei dolci fatti in casa con giuria di paesani.",
+                category: "Sport",
+                highlight: false
+            },
+            {
+                id: "evt-23-2",
+                date: "2026-10-23",
+                dayDisplay: "Ven 23 Ott",
+                dayNum: 23,
+                month: "Ott",
+                time: "22:00",
+                location: "Via Cesare Battisti (Torrefazione Trobbiani)",
+                title: "Just For Funk Family Live",
+                description: "Serata ad alto ritmo tra funk, soul e discomusic dal vivo nel cuore della movida.",
+                category: "Musica",
+                highlight: false
+            },
+
+            // SATURDAY 24 OCT - SAN CRISPINO DAY
+            {
+                id: "evt-24-1",
+                date: "2026-10-24",
+                dayDisplay: "Sab 24 Ott",
+                dayNum: 24,
+                month: "Ott",
+                time: "Dalle 10:00",
+                location: "Centro città",
+                title: "Gonfiabili, Attrazioni & Giochi per Bambini",
+                description: "Giornata interamente dedicata alle famiglie e ai bambini con parchi giochi gonfiabili, CandyPark, stand CNA e 'A tutta pizza'.",
+                category: "Bambini",
+                highlight: false
+            },
+            {
+                id: "evt-24-2",
+                date: "2026-10-24",
+                dayDisplay: "Sab 24 Ott",
+                dayNum: 24,
+                month: "Ott",
+                time: "18:00",
+                location: "Chiesa SS Annunziata & Centro",
+                title: "Solenne Celebrazione, Processione & Spettacolo Pirotecnico",
+                description: "Santa Messa del Patrono San Crispino, solenne processione per le vie della città accompagnata dal corpo bandistico e fuochi d'artificio.",
+                category: "Tradizione",
+                highlight: true
+            },
+            {
+                id: "evt-24-3",
+                date: "2026-10-24",
+                dayDisplay: "Sab 24 Ott",
+                dayNum: 24,
+                month: "Ott",
+                time: "22:00",
+                location: "Piazza Garibaldi",
+                title: "DANCE ALL NIGHT con Andrea Zelletta, Dj Frans & Voice",
+                description: "La grande festa giovani! Dj set spettacolare con ANDREA ZELLETTA, Dj Frans, Miki Mercuri voice e Paolo Balestrieri. Diretta nazionale su Radio FM Faleria!",
+                category: "Musica",
+                highlight: true
+            },
+
+            // SUNDAY 25 OCT
+            {
+                id: "evt-25-1",
+                date: "2026-10-25",
+                dayDisplay: "Dom 25 Ott",
+                dayNum: 25,
+                month: "Ott",
+                time: "07:00 - 20:00",
+                location: "Vie del Centro Cittadino",
+                title: "35° FIERA MERCATO DI SAN CRISPINO",
+                description: "Oltre 200 bancarelle, prodotti tipici, abbigliamento, artigianato e calzature per la storica fiera annuale del centro.",
+                category: "Tradizione",
+                highlight: true
+            },
+            {
+                id: "evt-25-2",
+                date: "2026-10-25",
+                dayDisplay: "Dom 25 Ott",
+                dayNum: 25,
+                month: "Ott",
+                time: "16:30",
+                location: "Polo culturale Beniamino Gigli",
+                title: "\"Mille scarpe\" & Presentazione Libro \"Tracce di Tacchi\"",
+                description: "Incontro tra parole e musica con Maria Letizia Gorga, Pino Ammendola e l'esibizione del coro 'Le voci dell'Unisono'.",
+                category: "Cultura",
+                highlight: false
+            },
+            {
+                id: "evt-25-3",
+                date: "2026-10-25",
+                dayDisplay: "Dom 25 Ott",
+                dayNum: 25,
+                month: "Ott",
+                time: "19:00",
+                location: "Area Ex Orfeo Serafini",
+                title: "GRANDE SPETTACOLO PIROTECNICO SUL MARE",
+                description: "I tradizionali e spettacolari fuochi d'artificio di chiusura della Fiera a cura dei migliori maestri pirotecnici.",
+                category: "Spettacolo",
+                highlight: true
+            },
+
+            // WEDNESDAY 28 OCT
+            {
+                id: "evt-28-1",
+                date: "2026-10-28",
+                dayDisplay: "Mer 28 Ott",
+                dayNum: 28,
+                month: "Ott",
+                time: "21:15",
+                location: "Polo culturale Beniamino Gigli",
+                title: "\"Cinque minuti e spengo!\" - Vivere il digitale senza esserne vissuti",
+                description: "Conferenza e dibattito sul rapporto tra giovani, famiglie e mondo digitale/Metaverso. A cura del progetto 'Nati nel Metaverso'.",
+                category: "Cultura",
+                highlight: false
+            },
+
+            // THURSDAY 29 OCT
+            {
+                id: "evt-29-1",
+                date: "2026-10-29",
+                dayDisplay: "Gio 29 Ott",
+                dayNum: 29,
+                month: "Ott",
+                time: "21:15",
+                location: "Polo culturale Beniamino Gigli",
+                title: "Premio Giornalistico Valentini con Giulia Cicchinè",
+                description: "Consegna del prestigioso premio giornalistico con la partecipazione speciale della giornalista sportiva Giulia Cicchinè.",
+                category: "Cultura",
+                highlight: false
+            },
+
+            // FRIDAY 30 OCT
+            {
+                id: "evt-30-1",
+                date: "2026-10-30",
+                dayDisplay: "Ven 30 Ott",
+                dayNum: 30,
+                month: "Ott",
+                time: "21:30",
+                location: "Centro città",
+                title: "San Crispino… Moda in Movimento",
+                description: "Sfilata di moda, calzature e accessori delle collezioni autunno/inverno con le migliori boutique e produttori locali.",
+                category: "Spettacolo",
+                highlight: false
+            },
+
+            // SATURDAY 31 OCT
+            {
+                id: "evt-31-1",
+                date: "2026-10-31",
+                dayDisplay: "Sab 31 Ott",
+                dayNum: 31,
+                month: "Ott",
+                time: "15:00",
+                location: "Centro sociale Villa Murri",
+                title: "1° Trofeo San Crispino di Burraco",
+                description: "Torneo di burraco aperto a tutti i tesserati e appassionati con ricchi premi locali.",
+                category: "Tradizione",
+                highlight: false
+            },
+            {
+                id: "evt-31-2",
+                date: "2026-10-31",
+                dayDisplay: "Sab 31 Ott",
+                dayNum: 31,
+                month: "Ott",
+                time: "16:00",
+                location: "Piazza Garibaldi",
+                title: "GRANDE CASTAGNATA E VINO NOVELLO",
+                description: "Pomeriggio autunnale in piazza con caldarroste fumanti, vino novello e musica popolare.",
+                category: "Enogastronomia",
+                highlight: false
+            },
+
+            // SUNDAY 8 NOV
+            {
+                id: "evt-08nov-1",
+                date: "2026-11-08",
+                dayDisplay: "Dom 8 Nov",
+                dayNum: 8,
+                month: "Nov",
+                time: "19:00",
+                location: "Polo culturale Beniamino Gigli",
+                title: "ESTRAZIONE LOTTERIA DI SAN CRISPINO",
+                description: "Estrazione ufficiale dei biglietti vincenti della Lotteria di San Crispino 2026 con ricchi premi in palio.",
+                category: "Tradizione",
+                highlight: true
+            }
+        ];
+
+        // CATEGORIES DEFINITION WITH COLORS
+        const CATEGORIES = [
+            { id: "ALL", name: "Tutti" },
+            { id: "Musica", name: "Musica" },
+            { id: "Cultura", name: "Cultura" },
+            { id: "Enogastronomia", name: "Food & Festa" },
+            { id: "Tradizione", name: "Tradizione" },
+            { id: "Sport", name: "Sport" },
+            { id: "Bambini", name: "Bambini" },
+            { id: "Spettacolo", name: "Spettacolo" },
+            { id: "Sociale", name: "Sociale" }
+        ];
+
+        // APP STATE
+        let activeDate = "ALL";
+        let activeCategory = "ALL";
+        let searchQuery = "";
+        let favorites = JSON.parse(localStorage.getItem('sc2026_favs') || '[]');
+        let showFavoritesOnly = false;
+        let selectedModalEvent = null;
+
+        // Generate list of days for October (2 to 31) plus Nov 8
+        function getRibbonDates() {
+            const dates = [];
+            // October 2 to 31
+            for (let i = 2; i <= 31; i++) {
+                const dateStr = `2026-10-${i < 10 ? '0' + i : i}`;
+                const hasEvent = EVENTS.some(e => e.date === dateStr);
+                const isHighlight = EVENTS.some(e => e.date === dateStr && e.highlight);
+                
+                // Get short day name
+                const tempDate = new Date(2026, 9, i); // Oct is month 9
+                const dayNames = ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"];
+                const dayName = dayNames[tempDate.getDay()];
+
+                dates.push({
+                    dateStr: dateStr,
+                    dayNum: i,
+                    monthStr: "Ott",
+                    dayName: dayName,
+                    hasEvent: hasEvent,
+                    isHighlight: isHighlight
+                });
+            }
+
+            // November 8
+            dates.push({
+                dateStr: "2026-11-08",
+                dayNum: 8,
+                monthStr: "Nov",
+                dayName: "Dom",
+                hasEvent: true,
+                isHighlight: true
+            });
+
+            return dates;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderDateRibbon();
+            renderCategoryPills();
+            updateFavoritesCounter();
+            startCountdown();
+
+            // Handle direct Hash or Query Routing (e.g. #giorno-17 or #highlight or ?date=2026-10-24)
+            handleURLRouting();
+
+            window.addEventListener('hashchange', handleURLRouting);
+        });
+
+        // HANDLE HASH & URL ROUTING FOR DIRECT LINKING
+        function handleURLRouting() {
+            const hash = window.location.hash;
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryDate = urlParams.get('date');
+
+            if (queryDate) {
+                selectDate(queryDate);
+                return;
+            }
+
+            if (hash) {
+                if (hash === '#preferiti') {
+                    toggleFavoritesView(true);
+                } else if (hash === '#in-evidenza' || hash === '#highlights') {
+                    selectHighlights();
+                } else if (hash.startsWith('#giorno-')) {
+                    const dayNum = parseInt(hash.replace('#giorno-', ''));
+                    if (!isNaN(dayNum)) {
+                        const targetDate = dayNum === 8 ? "2026-11-08" : `2026-10-${dayNum < 10 ? '0' + dayNum : dayNum}`;
+                        selectDate(targetDate);
+                    }
+                } else if (hash.startsWith('#event-')) {
+                    const evtId = hash.replace('#', '');
+                    const found = EVENTS.find(e => e.id === evtId);
+                    if (found) {
+                        renderEvents();
+                        openModal(found.id);
+                    }
+                }
+            } else {
+                renderEvents();
+            }
+        }
+
+        // RENDER HORIZONTAL DATE SELECTOR RIBBON
+        function renderDateRibbon() {
+            const ribbon = document.getElementById("dateRibbon");
+            const ribbonDates = getRibbonDates();
+
+            ribbonDates.forEach(d => {
+                const button = document.createElement("button");
+                button.id = `datePill-${d.dateStr}`;
+                button.onclick = () => selectDate(d.dateStr);
+
+                const highlightStyle = d.isHighlight ? 'border-brand-magenta/60 text-brand-magenta' : 'border-white/10 text-gray-300';
+                const opacityStyle = d.hasEvent ? 'opacity-100' : 'opacity-40';
+
+                button.className = `date-ribbon-item shrink-0 px-3.5 py-2 rounded-2xl border ${highlightStyle} ${opacityStyle} bg-white/5 hover:bg-white/10 text-xs font-semibold flex flex-col items-center justify-center min-w-[62px] transition-all relative`;
+
+                button.innerHTML = `
+                    <span class="text-[9px] uppercase tracking-wider text-gray-400 font-bold">${d.dayName}</span>
+                    <span class="font-extrabold text-base leading-tight">${d.dayNum}</span>
+                    <span class="text-[9px] uppercase tracking-wider text-gray-400">${d.monthStr}</span>
+                    ${d.isHighlight ? '<span class="absolute -top-1 -right-1 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-magenta opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-magenta"></span></span>' : ''}
+                    ${d.hasEvent && !d.isHighlight ? '<span class="w-1.5 h-1.5 rounded-full bg-brand-acid mt-0.5"></span>' : ''}
+                `;
+
+                ribbon.appendChild(button);
+            });
+        }
+
+        // SCROLL RIBBON
+        function scrollRibbon(amount) {
+            document.getElementById("dateRibbon").scrollBy({ left: amount, behavior: 'smooth' });
+        }
+
+        // RENDER CATEGORY PILLS
+        function renderCategoryPills() {
+            const container = document.getElementById("categoryPills");
+            container.innerHTML = "";
+
+            CATEGORIES.forEach(cat => {
+                const btn = document.createElement("button");
+                btn.id = `catPill-${cat.id}`;
+                btn.onclick = () => selectCategory(cat.id);
+                btn.className = `shrink-0 px-3 py-1.5 rounded-xl border border-white/10 text-xs font-semibold text-gray-300 hover:text-white hover:bg-white/10 transition-all ${cat.id === 'ALL' ? 'bg-white/10 border-brand-acid/40 text-brand-acid' : ''}`;
+                btn.innerText = cat.name;
+                container.appendChild(btn);
+            });
+        }
+
+        // SELECT DATE FILTER
+        function selectDate(dateStr) {
+            activeDate = dateStr;
+            showFavoritesOnly = false;
+            
+            // Update Ribbon Active States
+            document.querySelectorAll('.date-ribbon-item').forEach(el => el.classList.remove('active'));
+            const activeBtn = document.getElementById(`datePill-${dateStr}`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+
+            // Update Header Label
+            const label = document.getElementById("selectedDateLabel");
+            if (dateStr === "ALL") {
+                label.innerText = "(Tutti gli eventi)";
+                history.replaceState(null, null, ' ');
+            } else if (dateStr === "HIGHLIGHTS") {
+                label.innerText = "(In Evidenza ⭐)";
+                window.location.hash = "in-evidenza";
+            } else {
+                const evt = EVENTS.find(e => e.date === dateStr);
+                label.innerText = evt ? `(${evt.dayDisplay})` : `(${dateStr})`;
+                const dayNum = parseInt(dateStr.split('-')[2]);
+                window.location.hash = `giorno-${dayNum}`;
+            }
+
+            renderEvents();
+        }
+
+        // SELECT HIGHLIGHTS ONLY
+        function selectHighlights() {
+            selectDate("HIGHLIGHTS");
+        }
+
+        // SELECT CATEGORY
+        function selectCategory(catId) {
+            activeCategory = catId;
+            showFavoritesOnly = false;
+
+            document.querySelectorAll('#categoryPills button').forEach(btn => {
+                btn.classList.remove('bg-white/10', 'border-brand-acid/40', 'text-brand-acid');
+            });
+
+            const activeCatBtn = document.getElementById(`catPill-${catId}`);
+            if (activeCatBtn) {
+                activeCatBtn.classList.add('bg-white/10', 'border-brand-acid/40', 'text-brand-acid');
+            }
+
+            renderEvents();
+        }
+
+        // SEARCH HANDLE
+        function handleSearch() {
+            const input = document.getElementById("searchInput");
+            searchQuery = input.value.trim().toLowerCase();
+            const clearBtn = document.getElementById("clearSearchBtn");
+            
+            if (searchQuery.length > 0) {
+                clearBtn.classList.remove("hidden");
+            } else {
+                clearBtn.classList.add("hidden");
+            }
+
+            renderEvents();
+        }
+
+        function clearSearch() {
+            document.getElementById("searchInput").value = "";
+            searchQuery = "";
+            document.getElementById("clearSearchBtn").classList.add("hidden");
+            renderEvents();
+        }
+
+        // TOGGLE FAVORITES VIEW
+        function toggleFavoritesView(forceShow = false) {
+            if (forceShow) {
+                showFavoritesOnly = true;
+            } else {
+                showFavoritesOnly = !showFavoritesOnly;
+            }
+
+            const favBtn = document.getElementById("favTabBtn");
+            if (showFavoritesOnly) {
+                favBtn.classList.add('bg-brand-magenta/20', 'border-brand-magenta', 'text-white');
+                window.location.hash = "preferiti";
+            } else {
+                favBtn.classList.remove('bg-brand-magenta/20', 'border-brand-magenta', 'text-white');
+                history.replaceState(null, null, ' ');
+            }
+
+            renderEvents();
+        }
+
+        // SHOW ALL RESET
+        function showAllEvents() {
+            resetAllFilters();
+        }
+
+        function resetAllFilters() {
+            activeDate = "ALL";
+            activeCategory = "ALL";
+            searchQuery = "";
+            showFavoritesOnly = false;
+            document.getElementById("searchInput").value = "";
+            document.getElementById("clearSearchBtn").classList.add("hidden");
+
+            document.querySelectorAll('.date-ribbon-item').forEach(el => el.classList.remove('active'));
+            document.getElementById('datePill-ALL').classList.add('active');
+
+            renderCategoryPills();
+            history.replaceState(null, null, ' ');
+            renderEvents();
+        }
+
+        // MAIN RENDER EVENTS FUNCTION
+        function renderEvents() {
+            const grid = document.getElementById("eventsGrid");
+            const emptyState = document.getElementById("emptyState");
+            const heading = document.getElementById("viewHeading");
+            const counter = document.getElementById("eventCountBadge");
+            const resetBtn = document.getElementById("resetFiltersBtn");
+
+            grid.innerHTML = "";
+
+            let filtered = EVENTS.filter(evt => {
+                // Date Filter
+                if (activeDate === "HIGHLIGHTS") {
+                    if (!evt.highlight) return false;
+                } else if (activeDate !== "ALL" && evt.date !== activeDate) {
+                    return false;
+                }
+
+                // Category Filter
+                if (activeCategory !== "ALL" && evt.category !== activeCategory) {
+                    return false;
+                }
+
+                // Search Query
+                if (searchQuery) {
+                    const matchTitle = evt.title.toLowerCase().includes(searchQuery);
+                    const matchLoc = evt.location.toLowerCase().includes(searchQuery);
+                    const matchDesc = evt.description.toLowerCase().includes(searchQuery);
+                    const matchCat = evt.category.toLowerCase().includes(searchQuery);
+                    if (!matchTitle && !matchLoc && !matchDesc && !matchCat) return false;
+                }
+
+                // Favorites Only Filter
+                if (showFavoritesOnly && !favorites.includes(evt.id)) {
+                    return false;
+                }
+
+                return true;
+            });
+
+            // Update View Heading Text
+            if (showFavoritesOnly) {
+                heading.innerHTML = `<i class="fa-solid fa-heart text-brand-magenta"></i> I tuoi Preferiti`;
+            } else if (activeDate === "HIGHLIGHTS") {
+                heading.innerHTML = `⭐ Eventi in Evidenza`;
+            } else if (activeDate !== "ALL") {
+                const sample = EVENTS.find(e => e.date === activeDate);
+                heading.innerText = sample ? `Eventi di ${sample.dayDisplay}` : `Eventi del ${activeDate}`;
+            } else if (activeCategory !== "ALL") {
+                heading.innerText = `Categoria: ${activeCategory}`;
+            } else if (searchQuery) {
+                heading.innerText = `Risultati per "${searchQuery}"`;
+            } else {
+                heading.innerText = `Tutti gli Eventi`;
+            }
+
+            counter.innerText = filtered.length;
+
+            // Show or hide reset button if filters are active
+            if (activeDate !== "ALL" || activeCategory !== "ALL" || searchQuery !== "" || showFavoritesOnly) {
+                resetBtn.classList.remove("hidden");
+            } else {
+                resetBtn.classList.add("hidden");
+            }
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove("hidden");
+                return;
+            } else {
+                emptyState.classList.add("hidden");
+            }
+
+            // Render Cards
+            filtered.forEach(evt => {
+                const isFav = favorites.includes(evt.id);
+
+                const card = document.createElement("div");
+                card.className = `glass-card rounded-2xl border p-5 flex flex-col justify-between space-y-4 hover:border-brand-acid/40 transition-all duration-300 relative group ${evt.highlight ? 'border-brand-magenta/40 shadow-neon-magenta/20' : 'border-white/10'}`;
+
+                card.innerHTML = `
+                    <div class="space-y-3">
+                        <!-- Top Metadata & Favorite -->
+                        <div class="flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-white/10 text-brand-acid border border-white/10">
+                                    ${evt.category}
+                                </span>
+                                ${evt.highlight ? '<span class="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-magenta text-white flex items-center gap-1 shadow-neon-magenta"><i class="fa-solid fa-star text-[8px]"></i> Clou</span>' : ''}
+                            </div>
+
+                            <button onclick="toggleFavorite('${evt.id}', event)" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 hover:text-brand-magenta transition-all">
+                                <i class="${isFav ? 'fa-solid text-brand-magenta scale-110' : 'fa-regular'} fa-heart text-sm"></i>
+                            </button>
+                        </div>
+
+                        <!-- Date & Time Row -->
+                        <div class="flex items-center gap-3 text-xs font-bold text-gray-300">
+                            <span class="text-brand-acid flex items-center gap-1">
+                                <i class="fa-regular fa-calendar-check"></i> ${evt.dayDisplay}
+                            </span>
+                            <span class="text-gray-500">•</span>
+                            <span class="text-gray-300 flex items-center gap-1">
+                                <i class="fa-regular fa-clock"></i> ${evt.time}
+                            </span>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="font-display font-extrabold text-lg text-white group-hover:text-brand-acid transition-colors leading-snug">
+                            ${evt.title}
+                        </h3>
+
+                        <!-- Location -->
+                        <p class="text-xs text-gray-400 flex items-start gap-1.5">
+                            <i class="fa-solid fa-location-dot text-brand-magenta mt-0.5 shrink-0"></i>
+                            <span>${evt.location}</span>
+                        </p>
+
+                        <!-- Short Description -->
+                        <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed">
+                            ${evt.description}
+                        </p>
+                    </div>
+
+                    <!-- Bottom Action Bar -->
+                    <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+                        <button onclick="openModal('${evt.id}')" class="w-full py-2 px-3 rounded-xl bg-white/10 hover:bg-brand-acid hover:text-black font-bold text-xs text-white transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-circle-info"></i> Dettagli & Info
+                        </button>
+                        <button onclick="shareEvent('${evt.id}', event)" class="p-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 hover:text-brand-acid transition-all text-xs" title="Condividi">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </button>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // TOGGLE FAVORITE
+        function toggleFavorite(id, e) {
+            if (e) e.stopPropagation();
+            const index = favorites.indexOf(id);
+            if (index > -1) {
+                favorites.splice(index, 1);
+                showToast("Rimosso dai preferiti", "fa-heart-crack", "text-brand-magenta");
+            } else {
+                favorites.push(id);
+                showToast("Aggiunto ai tuoi Preferiti!", "fa-heart", "text-brand-magenta");
+            }
+
+            localStorage.setItem('sc2026_favs', JSON.stringify(favorites));
+            updateFavoritesCounter();
+            renderEvents();
+        }
+
+        function updateFavoritesCounter() {
+            const counter = document.getElementById("favCounter");
+            if (counter) counter.innerText = favorites.length;
+        }
+
+        // OPEN MODAL DETAILS
+        function openModal(id) {
+            const evt = EVENTS.find(e => e.id === id);
+            if (!evt) return;
+
+            selectedModalEvent = evt;
+
+            document.getElementById("modalTitle").innerText = evt.title;
+            document.getElementById("modalCategory").innerText = evt.category;
+            
+            const highlightBadge = document.getElementById("modalHighlightBadge");
+            if (evt.highlight) {
+                highlightBadge.classList.remove("hidden");
+            } else {
+                highlightBadge.classList.add("hidden");
+            }
+
+            document.getElementById("modalDateTime").innerText = `${evt.dayDisplay} • ore ${evt.time}`;
+            document.getElementById("modalLocation").innerText = evt.location;
+            document.getElementById("modalDescription").innerText = evt.description;
+
+            // Calendar URL Generation (Google Calendar)
+            const calUrl = createGoogleCalendarUrl(evt);
+            document.getElementById("modalCalendarBtn").href = calUrl;
+
+            // Map URL (Google Maps search)
+            const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(evt.location + ", Porto Sant'Elpidio")}`;
+            document.getElementById("modalMapBtn").href = mapUrl;
+
+            // WhatsApp Share
+            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37° Festa di San Crispino a Porto Sant'Elpidio!`);
+            document.getElementById("modalWhatsappBtn").href = `https://wa.me/?text=${waText}`;
+
+            document.getElementById("eventModal").classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+            document.getElementById("eventModal").classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }
+
+        // GOOGLE CALENDAR URL GENERATOR
+        function createGoogleCalendarUrl(evt) {
+            const title = encodeURIComponent(`San Crispino 2026: ${evt.title}`);
+            const details = encodeURIComponent(`${evt.description}\n\nOrganizzazione: Festa del Patrono San Crispino Porto Sant'Elpidio.`);
+            const location = encodeURIComponent(`${evt.location}, Porto Sant'Elpidio (FM)`);
+
+            // Parse Date string (e.g. 2026-10-17)
+            const dateClean = evt.date.replace(/-/g, '');
+            // Default 2 hours event duration for calendar
+            const startStr = `${dateClean}T180000`;
+            const endStr = `${dateClean}T200000`;
+
+            return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startStr}/${endStr}&details=${details}&location=${location}`;
+        }
+
+        // COPY EVENT DIRECT LINK
+        function copyEventLink() {
+            if (!selectedModalEvent) return;
+            const fullUrl = `${window.location.origin}${window.location.pathname}#event-${selectedModalEvent.id}`;
+            
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(fullUrl);
+            } else {
+                // Fallback for older WebViews
+                const input = document.createElement('input');
+                input.value = fullUrl;
+                document.body.appendChild(input);
+                input.select();
+                document.execCommand('copy');
+                document.body.removeChild(input);
+            }
+
+            showToast("Link copiato negli appunti!", "fa-link", "text-brand-acid");
+        }
+
+        // SHARE WEBSITE
+        function shareWebsite() {
+            const shareData = {
+                title: "SanCrispino2026 - Porto Sant'Elpidio",
+                text: "Programma ufficiale della 37° Festa del Patrono San Crispino a Porto Sant'Elpidio (2 Ottobre - 8 Novembre 2026)!",
+                url: window.location.href,
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData).catch(() => {});
+            } else {
+                copyTextToClipboard(window.location.href);
+                showToast("Link festa copiato negli appunti!", "fa-share-nodes", "text-brand-acid");
+            }
+        }
+
+        function shareEvent(id, e) {
+            if (e) e.stopPropagation();
+            const evt = EVENTS.find(e => e.id === id);
+            if (!evt) return;
+
+            const url = `${window.location.origin}${window.location.pathname}#event-${evt.id}`;
+            if (navigator.share) {
+                navigator.share({
+                    title: evt.title,
+                    text: `${evt.title} - San Crispino 2026 Porto Sant'Elpidio`,
+                    url: url
+                }).catch(() => {});
+            } else {
+                copyTextToClipboard(url);
+                showToast("Link evento copiato!", "fa-share-nodes", "text-brand-acid");
+            }
+        }
+
+        function copyTextToClipboard(text) {
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+
+        // COUNTDOWN TIMER TO NEXT HIGHLIGHT EVENT (Giusy Ferreri Concert - 17 Oct 2026 21:45)
+        function startCountdown() {
+            const targetDate = new Date("2026-10-17T21:45:00").getTime();
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const difference = targetDate - now;
+
+                if (difference <= 0) {
+                    document.getElementById("timerDays").innerText = "00";
+                    document.getElementById("timerHours").innerText = "00";
+                    document.getElementById("timerMins").innerText = "00";
+                    document.getElementById("timerSecs").innerText = "00";
+                    return;
+                }
+
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById("timerDays").innerText = days < 10 ? '0' + days : days;
+                document.getElementById("timerHours").innerText = hours < 10 ? '0' + hours : hours;
+                document.getElementById("timerMins").innerText = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById("timerSecs").innerText = seconds < 10 ? '0' + seconds : seconds;
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        // SHOW TOAST NOTIFICATION
+        function showToast(message, iconClass = "fa-circle-check", colorClass = "text-brand-acid") {
+            const toast = document.getElementById("toast");
+            const toastMsg = document.getElementById("toastMsg");
+            const toastIcon = document.getElementById("toastIcon");
+
+            toastMsg.innerText = message;
+            toastIcon.className = `fa-solid ${iconClass} ${colorClass} text-base`;
+
+            toast.classList.remove("translate-y-20", "opacity-0");
+            toast.classList.add("translate-y-0", "opacity-100");
+
+            setTimeout(() => {
+                toast.classList.remove("translate-y-0", "opacity-100");
+                toast.classList.add("translate-y-20", "opacity-0");
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
