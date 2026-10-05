@@ -114,9 +114,11 @@
             
             <!-- Logo Badge & Title -->
             <a href="index.html" class="flex items-center gap-2 text-decoration-none group">
-                <span class="font-black text-xl md:text-2xl text-[#e6007e] uppercase tracking-tighter group-hover:text-[#b80064] transition-colors">
-                    SanCrispino<span class="text-[#222]">Eventi</span>
-                </span>
+                <img 
+                    src="logo.PNG" 
+                    alt="San Crispino Eventi" 
+                    class="h-16 md:h-20 w-auto object-contain transition-opacity group-hover:opacity-80"
+                >
                 <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full bg-[#e6007e] text-white text-[10px] font-black uppercase tracking-widest">
                     37ª Edizione
                 </span>
@@ -948,8 +950,8 @@
                 month: "Ott",
                 time: "22:00",
                 location: "Piazza Garibaldi",
-                title: "DANCE ALL NIGHT con Andrea Zelletta, Dj Frans & Voice",
-                description: "La grande festa giovani! Dj set spettacolare con ANDREA ZELLETTA, Dj Frans, Miki Mercuri voice e Paolo Balestrieri. Diretta nazionale su Radio FM Faleria!",
+                title: "DANCE ALL NIGHT con Guest Dj Zelletta",
+                description: "Dj set con ANDREA ZELLETTA! A seguire Frans e Miki Mercuri di ON THE NIGHT e voice Paolo Balestrieri. Diretta nazionale su Radio FM Faleria!",
                 category: "Musica",
                 highlight: true
             },
@@ -1035,7 +1037,7 @@
                 time: "21:30",
                 location: "Centro città",
                 title: "San Crispino… Moda in Movimento",
-                description: "Sfilata di moda, calzature e accessori delle collezioni autunno/inverno con le migliori boutique e produttori locali.",
+                description: "Sfilata di moda delle collezioni autunno/inverno con le migliori boutique e produttori locali. Animazione Cris Dance",
                 category: "Spettacolo",
                 highlight: false
             },
@@ -1048,9 +1050,9 @@
                 dayNum: 31,
                 month: "Ott",
                 time: "15:00",
-                location: "Centro sociale Villa Murri",
+                location: "Centro sociale Montagnola",
                 title: "1° Trofeo San Crispino di Burraco",
-                description: "Torneo di burraco aperto a tutti i tesserati e appassionati con ricchi premi locali.",
+                description: "Torneo di burraco aperto a tutti gli appassionati con ricchi premi locali.",
                 category: "Tradizione",
                 highlight: false
             },
@@ -1542,7 +1544,7 @@
             document.getElementById("modalMapBtn").href = mapUrl;
 
             // WhatsApp Share
-            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37ª Festa di San Crispino a Porto Sant'Elpidio!`);
+            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37ª Festa di San Crispino a Porto Sant'Elpidio!\n https://sancrispinopse.github.io`);
             document.getElementById("modalWhatsappBtn").href = `https://wa.me/?text=${waText}`;
 
             document.getElementById("eventModal").classList.remove("hidden");
