@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="it" class="dark scroll-smooth">
+﻿<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SanCrispino2026 | 37° Festa del Patrono - Porto Sant'Elpidio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>37ª Ediz. San Crispino – Calendario & Programma Eventi 2026 | Porto Sant'Elpidio</title>
 
     <!-- Meta SEO & Social Sharing -->
-    <meta name="description" content="Programma ufficiale della 37° Festa del Patrono San Crispino a Porto Sant'Elpidio. 2 Ottobre - 8 Novembre 2026. Concerti, eventi, gastronomia e tradizione.">
-    <meta property="og:title" content="SanCrispino2026 - Festa del Patrono Porto Sant'Elpidio">
-    <meta property="og:description" content="Scopri il programma completo con Giusy Ferreri, Dance All Night, StoccoFest, Premiu de lu Cazolà e molto altro!">
+    <meta name="description" content="Programma ufficiale della 37ª Festa del Patrono San Crispino a Porto Sant'Elpidio. 2 Ottobre - 8 Novembre 2026. Concerti, eventi, gastronomia e tradizione.">
+    <meta property="og:title" content="San Crispino 2026 - Programma Festa del Patrono Porto Sant'Elpidio">
+    <meta property="og:description" content="Scopri il programma completo con Giusy Ferreri, Dance All Night, StoccoFest, Premio de lu Cazolà e molto altro!">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <!-- Google Fonts: Montserrat (identical to index.html) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,30 +23,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            dark: '#0f0f13',
-                            card: '#16161f',
-                            cardHover: '#1e1e2b',
-                            border: '#282838',
-                            acid: '#c2f802',
-                            acidHover: '#a3d400',
-                            magenta: '#ff007f',
-                            magentaHover: '#d9006c',
-                            cyan: '#00f0ff',
-                        }
+                        lime: {
+                            DEFAULT: '#cbe02d',
+                            dark: '#b2c71f',
+                            light: '#dcf03d',
+                        },
+                        pink: {
+                            DEFAULT: '#e6007e',
+                            dark: '#b80064',
+                            light: '#ff2d9b',
+                        },
+                        ink: '#222222',
                     },
                     fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+                        display: ['Montserrat', 'system-ui', 'sans-serif'],
                     },
                     boxShadow: {
-                        'neon-acid': '0 0 20px rgba(194, 248, 2, 0.35)',
-                        'neon-magenta': '0 0 20px rgba(255, 0, 127, 0.4)',
-                        'glow-sm': '0 0 10px rgba(194, 248, 2, 0.2)',
+                        'pop': '0 4px 20px rgba(0, 0, 0, 0.06)',
+                        'pop-pink': '0 4px 20px rgba(230, 0, 126, 0.25)',
                     }
                 }
             }
@@ -54,12 +52,29 @@
     </script>
 
     <style>
-        /* Custom scrollbar & glassmorphism styling */
+        :root {
+            --lime: #cbe02d;
+            --pink: #e6007e;
+            --pink-dark: #b80064;
+            --white: #ffffff;
+            --ink: #222222;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
         body {
-            background-color: #0f0f13;
-            color: #f1f5f9;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--lime);
+            color: var(--ink);
+            font-family: 'Montserrat', system-ui, sans-serif;
             overflow-x: hidden;
+            line-height: 1.6;
         }
 
         /* Hide horizontal scrollbar while keeping scroll functionality */
@@ -71,91 +86,54 @@
             scrollbar-width: none;
         }
 
-        .glass-panel {
-            background: rgba(22, 22, 31, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .glass-card {
-            background: rgba(26, 26, 38, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.07);
-        }
-
-        .text-gradient-acid {
-            background: linear-gradient(135deg, #c2f802 0%, #00f0ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .text-gradient-magenta {
-            background: linear-gradient(135deg, #ff007f 0%, #ff8800 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Animated Pulsing Glow */
-        @keyframes pulse-glow {
-            0%, 100% { opacity: 0.6; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
-        }
-
-        .animate-glow {
-            animation: pulse-glow 3s infinite ease-in-out;
-        }
-
-        /* Active Date Item Highlight Effect */
+        /* Active Date Ribbon Pill */
         .date-ribbon-item.active {
-            background: linear-gradient(135deg, #c2f802 0%, #8ebd00 100%);
-            color: #0f0f13 !important;
+            background-color: var(--pink) !important;
+            color: var(--white) !important;
+            border-color: var(--pink) !important;
             font-weight: 800;
-            box-shadow: 0 0 15px rgba(194, 248, 2, 0.5);
+            box-shadow: 0 4px 14px rgba(230, 0, 126, 0.35);
             transform: translateY(-2px);
+        }
+        .date-ribbon-item.active span {
+            color: var(--white) !important;
+        }
+
+        /* Custom focus */
+        a:focus-visible, button:focus-visible, input:focus-visible {
+            outline: 3px solid var(--ink);
+            outline-offset: 2px;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-brand-acid selection:text-black">
+<body class="min-h-screen flex flex-col selection:bg-pink-DEFAULT selection:text-white">
 
-    <!-- TOP NAVIGATION / BRAND HEADER -->
-    <header class="sticky top-0 z-40 w-full glass-panel border-b border-white/10 px-4 py-3">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <!-- TOP NAVIGATION / BRAND HEADER (Matching index.html) -->
+    <header class="sticky top-0 z-40 w-full bg-[#cbe02d] shadow-sm border-b border-black/5 px-4 md:px-8 py-3.5">
+        <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
             
             <!-- Logo Badge & Title -->
-            <a href="#" onclick="showAllEvents(); return false;" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-magenta to-brand-acid p-[2px] shadow-neon-acid transition-transform group-hover:scale-105">
-                    <div class="w-full h-full bg-brand-dark rounded-[10px] flex items-center justify-center font-display font-black text-brand-acid text-xl">
-                        SC
-                    </div>
-                </div>
-                <div>
-                    <div class="flex items-center gap-2">
-                        <span class="font-display font-black text-lg md:text-xl tracking-tight text-white group-hover:text-brand-acid transition-colors">
-                            SanCrispino<span class="text-brand-acid">2026</span>
-                        </span>
-                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-magenta/20 text-brand-magenta border border-brand-magenta/30 uppercase tracking-widest">
-                            37° Edizione
-                        </span>
-                    </div>
-                    <p class="text-xs text-gray-400 font-medium tracking-wide">
-                        Porto Sant'Elpidio • 2 Ott - 8 Nov 2026
-                    </p>
-                </div>
+            <a href="index.html" class="flex items-center gap-2 text-decoration-none group">
+                <span class="font-black text-xl md:text-2xl text-[#e6007e] uppercase tracking-tighter group-hover:text-[#b80064] transition-colors">
+                    SanCrispino<span class="text-[#222]">Eventi</span>
+                </span>
+                <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full bg-[#e6007e] text-white text-[10px] font-black uppercase tracking-widest">
+                    37ª Edizione
+                </span>
             </a>
 
             <!-- Right Actions -->
             <div class="flex items-center gap-2">
                 <!-- Favorites Toggle Button -->
-                <button id="favTabBtn" onclick="toggleFavoritesView()" class="relative flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 hover:border-brand-magenta/50 text-xs font-semibold text-gray-300 hover:text-white transition-all">
-                    <i class="fa-solid fa-heart text-brand-magenta"></i>
+                <button id="favTabBtn" onclick="toggleFavoritesView()" class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white border-2 border-[#e6007e] text-xs font-black uppercase text-[#e6007e] hover:bg-[#e6007e] hover:text-white transition-all shadow-sm">
+                    <i class="fa-solid fa-heart text-[#e6007e]"></i>
                     <span class="hidden sm:inline">Preferiti</span>
-                    <span id="favCounter" class="ml-0.5 px-1.5 py-0.2 bg-brand-magenta text-white font-bold text-[10px] rounded-full">0</span>
+                    <span id="favCounter" class="px-1.5 py-0.2 bg-[#e6007e] text-white text-[10px] font-black rounded-full">0</span>
                 </button>
 
-                <!-- IG Share Shortcut -->
-                <button onclick="shareWebsite()" title="Condividi Festa" class="p-2 rounded-xl bg-white/5 border border-white/10 hover:border-brand-acid text-brand-acid transition-all">
-                    <i class="fa-solid fa-share-nodes text-sm"></i>
+                <!-- Share Shortcut -->
+                <button onclick="shareWebsite()" title="Condividi Festa" class="p-2.5 px-3 rounded-full bg-white border-2 border-[#e6007e] text-[#e6007e] hover:bg-[#e6007e] hover:text-white transition-all text-xs shadow-sm">
+                    <i class="fa-solid fa-share-nodes"></i>
                 </button>
             </div>
         </div>
@@ -164,96 +142,92 @@
     <!-- MAIN CONTENT CONTAINER -->
     <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-4 space-y-6">
 
-        <!-- HERO BANNER / LINK IN BIO TOPPER -->
-        <section class="relative overflow-hidden rounded-3xl glass-card p-6 md:p-8 border border-white/10 bg-gradient-to-br from-brand-card via-brand-dark to-black">
-            <!-- Neon background glows -->
-            <div class="absolute -top-24 -left-24 w-60 h-60 bg-brand-acid/15 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-brand-magenta/20 rounded-full blur-3xl pointer-events-none"></div>
-
-            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="text-center md:text-left space-y-3 max-w-2xl">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-acid/10 border border-brand-acid/30 text-brand-acid text-xs font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-star text-[10px]"></i> Programma Ufficiale San Crispino
+        <!-- HERO BANNER -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 border-2 border-black/5 shadow-pop">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="text-center lg:text-left space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#cbe02d] text-[#222] text-xs font-black uppercase tracking-wider">
+                        <i class="fa-solid fa-star text-[10px] text-[#e6007e]"></i> Programma Ufficiale San Crispino
                     </div>
-                    <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
-                        La Grande Festa di <br class="hidden sm:inline"><span class="text-gradient-acid">Porto Sant'Elpidio</span>
+                    <h1 class="font-black text-3xl sm:text-4xl md:text-5xl text-[#e6007e] tracking-tight leading-none uppercase">
+                        La Grande Festa di <br class="hidden sm:inline"><span class="text-[#222]">Porto Sant'Elpidio</span>
                     </h1>
-                    <p class="text-sm md:text-base text-gray-300">
-                        Musica live, concerti, tradizione calzaturiera, StoccoFest, enogastronomia e tanto divertimento per tutte le età.
+                    <p class="text-sm md:text-base text-gray-700 font-medium">
+                        Musica live, grandi concerti, tradizione calzaturiera, StoccoFest, enogastronomia e tanto divertimento per tutta la famiglia.
                     </p>
                     
-                    <!-- Quick Specs / Badges -->
-                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-2">
-                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
-                            <i class="fa-solid fa-music text-brand-magenta"></i> Concerti Gratuiti
+                    <!-- Quick Badges -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
+                        <span class="px-3 py-1 rounded-full bg-[#cbe02d]/40 border border-[#cbe02d] text-xs font-bold text-[#222] flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-music text-[#e6007e]"></i> Concerti Gratuiti
                         </span>
-                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
-                            <i class="fa-solid fa-utensils text-brand-acid"></i> StoccoFest
+                        <span class="px-3 py-1 rounded-full bg-[#cbe02d]/40 border border-[#cbe02d] text-xs font-bold text-[#222] flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-utensils text-[#e6007e]"></i> StoccoFest
                         </span>
-                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
-                            <i class="fa-solid fa-shoe-prints text-brand-cyan"></i> Premio Cazolà
+                        <span class="px-3 py-1 rounded-full bg-[#cbe02d]/40 border border-[#cbe02d] text-xs font-bold text-[#222] flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-shoe-prints text-[#e6007e]"></i> Premio Cazolà
                         </span>
-                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 flex items-center gap-1.5">
-                            <i class="fa-solid fa-fireworks text-amber-400"></i> Spettacoli Pirotecnici
+                        <span class="px-3 py-1 rounded-full bg-[#cbe02d]/40 border border-[#cbe02d] text-xs font-bold text-[#222] flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-fireworks text-[#e6007e]"></i> Spettacoli Pirotecnici
                         </span>
                     </div>
                 </div>
 
-                <!-- Next Big Event Card Showcase -->
-                <div id="countdownBox" class="w-full md:w-auto min-w-[280px] sm:min-w-[320px] p-4 rounded-2xl glass-panel border border-brand-magenta/30 text-center space-y-2 shadow-neon-magenta">
-                    <p class="text-[11px] uppercase tracking-widest text-brand-magenta font-extrabold flex items-center justify-center gap-1.5">
+                <!-- Next Big Event Countdown Box (Styled like index.html .count) -->
+                <div id="countdownBox" class="w-full lg:w-auto min-w-[280px] sm:min-w-[320px] p-5 rounded-2xl bg-[#cbe02d] border-2 border-[#e6007e]/30 text-center space-y-2 shadow-pop">
+                    <p class="text-[11px] uppercase tracking-widest text-[#e6007e] font-black flex items-center justify-center gap-1.5">
                         <span class="relative flex h-2 w-2">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-magenta opacity-75"></span>
-                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-magenta"></span>
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e6007e] opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-[#e6007e]"></span>
                         </span>
                         Prossimo Evento Clou
                     </p>
-                    <h3 id="nextEventTitle" class="font-display font-extrabold text-lg text-white line-clamp-1">
+                    <h3 id="nextEventTitle" class="font-black text-lg md:text-xl text-[#222] uppercase line-clamp-1">
                         Giusy Ferreri in Concerto
                     </h3>
-                    <p id="nextEventDate" class="text-xs text-gray-300">
+                    <p id="nextEventDate" class="text-xs text-gray-800 font-bold uppercase">
                         Sabato 17 Ottobre • Piazza Garibaldi
                     </p>
 
-                    <!-- Timer Grid -->
+                    <!-- Timer Grid (Styled matching index.html .tb) -->
                     <div class="grid grid-cols-4 gap-2 pt-2 text-center">
-                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
-                            <span id="timerDays" class="block font-display font-black text-lg text-brand-acid">00</span>
-                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Giorni</span>
+                        <div class="p-2 rounded-xl bg-white shadow-sm border border-black/5">
+                            <span id="timerDays" class="block font-black text-xl text-[#e6007e] leading-tight">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-[#222] font-bold">Giorni</span>
                         </div>
-                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
-                            <span id="timerHours" class="block font-display font-black text-lg text-brand-acid">00</span>
-                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Ore</span>
+                        <div class="p-2 rounded-xl bg-white shadow-sm border border-black/5">
+                            <span id="timerHours" class="block font-black text-xl text-[#e6007e] leading-tight">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-[#222] font-bold">Ore</span>
                         </div>
-                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
-                            <span id="timerMins" class="block font-display font-black text-lg text-brand-acid">00</span>
-                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Min</span>
+                        <div class="p-2 rounded-xl bg-white shadow-sm border border-black/5">
+                            <span id="timerMins" class="block font-black text-xl text-[#e6007e] leading-tight">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-[#222] font-bold">Min</span>
                         </div>
-                        <div class="p-2 rounded-xl bg-white/5 border border-white/10">
-                            <span id="timerSecs" class="block font-display font-black text-lg text-brand-magenta">00</span>
-                            <span class="text-[9px] uppercase tracking-wider text-gray-400">Sec</span>
+                        <div class="p-2 rounded-xl bg-white shadow-sm border border-black/5">
+                            <span id="timerSecs" class="block font-black text-xl text-[#e6007e] leading-tight">00</span>
+                            <span class="text-[9px] uppercase tracking-wider text-[#222] font-bold">Sec</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- STICKY HORIZONTAL DATE SELECTOR RIBBON (Mobile-First Swipeable) -->
-        <section class="sticky top-[61px] z-30 py-2 -mx-4 px-4 bg-brand-dark/90 backdrop-blur-xl border-y border-white/10">
+        <!-- STICKY HORIZONTAL DATE SELECTOR RIBBON -->
+        <section class="sticky top-[65px] z-30 py-2.5 -mx-4 px-4 bg-[#cbe02d]/95 backdrop-blur-md border-y-2 border-black/5">
             <div class="max-w-6xl mx-auto flex items-center justify-between gap-2 mb-2">
                 <div class="flex items-center gap-2">
-                    <span class="text-xs font-bold uppercase tracking-wider text-brand-acid flex items-center gap-1">
+                    <span class="text-xs font-black uppercase tracking-wider text-[#e6007e] flex items-center gap-1.5">
                         <i class="fa-solid fa-calendar-days"></i> Calendario Date
                     </span>
-                    <span id="selectedDateLabel" class="text-xs font-semibold text-gray-400">
+                    <span id="selectedDateLabel" class="text-xs font-bold text-[#222]">
                         (Tutti gli eventi)
                     </span>
                 </div>
                 <div class="flex items-center gap-1">
-                    <button onclick="scrollRibbon(-200)" class="p-1 px-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 text-xs">
+                    <button onclick="scrollRibbon(-200)" class="p-1.5 px-2.5 rounded-full bg-white hover:bg-gray-100 text-[#222] text-xs font-bold shadow-sm">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
-                    <button onclick="scrollRibbon(200)" class="p-1 px-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 text-xs">
+                    <button onclick="scrollRibbon(200)" class="p-1.5 px-2.5 rounded-full bg-white hover:bg-gray-100 text-[#222] text-xs font-bold shadow-sm">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -262,15 +236,15 @@
             <!-- Date Buttons Ribbon Container -->
             <div id="dateRibbon" class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 scroll-smooth">
                 <!-- All Events Shortcut Pill -->
-                <button onclick="selectDate('ALL')" id="datePill-ALL" class="date-ribbon-item active shrink-0 px-4 py-2 rounded-2xl border border-white/10 bg-white/5 text-xs font-semibold flex flex-col items-center justify-center min-w-[70px] transition-all">
-                    <span class="text-[10px] uppercase tracking-wider text-gray-400">Festa</span>
-                    <span class="font-extrabold text-sm">TUTTI</span>
+                <button onclick="selectDate('ALL')" id="datePill-ALL" class="date-ribbon-item active shrink-0 px-4 py-2 rounded-2xl border-2 border-transparent bg-white text-xs font-bold flex flex-col items-center justify-center min-w-[70px] transition-all shadow-sm">
+                    <span class="text-[9px] uppercase tracking-wider text-gray-500 font-bold">Festa</span>
+                    <span class="font-black text-sm text-[#222]">TUTTI</span>
                 </button>
 
                 <!-- Highlights Shortcut Pill -->
-                <button onclick="selectHighlights()" id="datePill-HIGHLIGHTS" class="date-ribbon-item shrink-0 px-4 py-2 rounded-2xl border border-brand-magenta/40 bg-brand-magenta/10 text-brand-magenta hover:bg-brand-magenta/20 text-xs font-semibold flex flex-col items-center justify-center min-w-[85px] transition-all">
-                    <span class="text-[10px] uppercase tracking-wider text-brand-magenta">⭐ Top</span>
-                    <span class="font-extrabold text-xs">EVIDENZA</span>
+                <button onclick="selectHighlights()" id="datePill-HIGHLIGHTS" class="date-ribbon-item shrink-0 px-4 py-2 rounded-2xl border-2 border-[#e6007e] bg-white text-[#e6007e] hover:bg-[#e6007e]/10 text-xs font-bold flex flex-col items-center justify-center min-w-[85px] transition-all shadow-sm">
+                    <span class="text-[9px] uppercase tracking-wider text-[#e6007e] font-bold">⭐ Top</span>
+                    <span class="font-black text-xs uppercase">EVIDENZA</span>
                 </button>
 
                 <!-- Dynamic Date Pills injected via JS -->
@@ -283,10 +257,10 @@
                 
                 <!-- Search Input -->
                 <div class="relative w-full md:w-80">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-[#e6007e] text-sm"></i>
                     <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Cerca artista, luogo, evento..." 
-                           class="w-full pl-10 pr-9 py-2.5 rounded-2xl glass-card text-xs md:text-sm text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:border-brand-acid transition-all">
-                    <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white text-xs">
+                           class="w-full pl-10 pr-9 py-2.5 rounded-full bg-white text-xs md:text-sm text-[#222] placeholder-gray-500 border-2 border-black/5 focus:outline-none focus:border-[#e6007e] shadow-sm transition-all font-medium">
+                    <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#e6007e] text-xs">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
@@ -302,110 +276,110 @@
         <section class="space-y-4">
             
             <!-- Section Title & Counter Bar -->
-            <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                <div class="flex items-center gap-2">
-                    <h2 id="viewHeading" class="font-display text-xl md:text-2xl font-bold text-white flex items-center gap-2">
+            <div class="flex items-center justify-between border-b-2 border-black/5 pb-3">
+                <div class="flex items-center gap-3">
+                    <h2 id="viewHeading" class="font-black text-xl md:text-2xl text-[#e6007e] uppercase tracking-tight flex items-center gap-2">
                         Tutti gli Eventi
                     </h2>
-                    <span id="eventCountBadge" class="px-2.5 py-0.5 rounded-full bg-brand-acid/20 text-brand-acid text-xs font-extrabold border border-brand-acid/30">
+                    <span id="eventCountBadge" class="px-2.5 py-0.5 rounded-full bg-white text-[#e6007e] text-xs font-black border-2 border-[#e6007e] shadow-sm">
                         0
                     </span>
                 </div>
 
                 <!-- Reset Filters Option -->
-                <button onclick="resetAllFilters()" id="resetFiltersBtn" class="hidden text-xs text-brand-magenta hover:underline flex items-center gap-1 font-semibold">
+                <button onclick="resetAllFilters()" id="resetFiltersBtn" class="hidden text-xs text-[#e6007e] hover:underline flex items-center gap-1 font-black uppercase">
                     <i class="fa-solid fa-rotate-left"></i> Mostra tutti
                 </button>
             </div>
 
             <!-- Event Cards Grid -->
-            <div id="eventsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div id="eventsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- Event cards injected via JS -->
             </div>
 
             <!-- Empty State Message -->
-            <div id="emptyState" class="hidden text-center py-12 glass-panel rounded-3xl border border-white/10 space-y-3">
-                <i class="fa-regular fa-calendar-xmark text-4xl text-gray-500"></i>
-                <h3 class="text-lg font-bold text-white">Nessun evento trovato</h3>
-                <p class="text-xs text-gray-400 max-w-md mx-auto">Non ci sono appuntamenti corrispondenti ai criteri o alla data selezionata.</p>
-                <button onclick="resetAllFilters()" class="px-4 py-2 bg-brand-acid text-black font-bold text-xs rounded-xl hover:bg-brand-acidHover transition-all">
+            <div id="emptyState" class="hidden text-center py-12 bg-white rounded-3xl border-2 border-black/5 space-y-3 shadow-pop">
+                <i class="fa-regular fa-calendar-xmark text-4xl text-[#e6007e]"></i>
+                <h3 class="text-lg font-black text-[#222] uppercase">Nessun evento trovato</h3>
+                <p class="text-xs text-gray-600 max-w-md mx-auto font-medium">Non ci sono appuntamenti corrispondenti ai criteri o alla data selezionata.</p>
+                <button onclick="resetAllFilters()" class="px-5 py-2.5 bg-[#e6007e] text-white font-black text-xs uppercase rounded-full hover:bg-[#b80064] transition-all shadow-sm">
                     Mostra Tutti gli Eventi
                 </button>
             </div>
         </section>
 
         <!-- MULTI-DAY & CONTINUOUS INITIATIVES SECTION -->
-        <section class="space-y-4 pt-6 border-t border-white/10">
+        <section class="space-y-4 pt-6 border-t-2 border-black/5">
             <div class="flex items-center justify-between">
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-brand-magenta">Iniziative Continue</span>
-                    <h2 class="font-display text-xl md:text-2xl font-black text-white">
-                        Mostre & Rassegne la Festa
+                    <span class="text-xs font-black uppercase tracking-widest text-[#e6007e]">Iniziative Continue</span>
+                    <h2 class="font-black text-xl md:text-2xl text-[#222] uppercase">
+                        Mostre & Rassegne durante la Festa
                     </h2>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 
                 <!-- StoccoFest Card -->
-                <div class="glass-card p-5 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-brand-acid/50 transition-all">
-                    <div class="absolute top-0 right-0 px-3 py-1 bg-brand-acid text-black font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
+                <div class="bg-white p-6 rounded-2xl border-2 border-[#e6007e]/20 relative overflow-hidden group hover:border-[#e6007e] transition-all shadow-pop">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-[#cbe02d] text-[#222] font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
                         18 OTT - 1 NOV
                     </div>
-                    <div class="space-y-2">
-                        <div class="w-10 h-10 rounded-xl bg-brand-acid/10 border border-brand-acid/30 flex items-center justify-center text-brand-acid text-lg">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#cbe02d]/40 flex items-center justify-center text-[#e6007e] text-lg">
                             <i class="fa-solid fa-fish-fins"></i>
                         </div>
-                        <h3 class="font-display text-lg font-bold text-white group-hover:text-brand-acid transition-colors">
+                        <h3 class="font-black text-lg text-[#222] group-hover:text-[#e6007e] uppercase transition-colors">
                             PORTO SANT'ELPIDIO STOCCOFEST
                         </h3>
-                        <p class="text-xs text-gray-300">
-                            La tradizione dello stoccafisso protagonista nei ristoranti aderenti della città. Degustazioni, menù speciali e ricette tradizionali.
+                        <p class="text-xs text-gray-700 leading-relaxed font-medium">
+                            La tradizione dello stoccafisso protagonista nei ristoranti aderenti della città. Degustazioni, menù speciali e ricette tradizionali marchigiane.
                         </p>
-                        <div class="pt-2 text-[11px] text-gray-400 flex items-center gap-1.5 font-semibold">
-                            <i class="fa-solid fa-utensils text-brand-acid"></i> Ristoranti Aderenti Cittadini
+                        <div class="pt-2 text-[11px] text-[#e6007e] flex items-center gap-1.5 font-bold uppercase">
+                            <i class="fa-solid fa-utensils"></i> Ristoranti Aderenti Cittadini
                         </div>
                     </div>
                 </div>
 
                 <!-- Pesca di Beneficenza Card -->
-                <div class="glass-card p-5 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-brand-magenta/50 transition-all">
-                    <div class="absolute top-0 right-0 px-3 py-1 bg-brand-magenta text-white font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
+                <div class="bg-white p-6 rounded-2xl border-2 border-[#e6007e]/20 relative overflow-hidden group hover:border-[#e6007e] transition-all shadow-pop">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-[#e6007e] text-white font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
                         15 - 25 OTTOBRE
                     </div>
-                    <div class="space-y-2">
-                        <div class="w-10 h-10 rounded-xl bg-brand-magenta/10 border border-brand-magenta/30 flex items-center justify-center text-brand-magenta text-lg">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#e6007e]/10 flex items-center justify-center text-[#e6007e] text-lg">
                             <i class="fa-solid fa-hand-holding-heart"></i>
                         </div>
-                        <h3 class="font-display text-lg font-bold text-white group-hover:text-brand-magenta transition-colors">
+                        <h3 class="font-black text-lg text-[#222] group-hover:text-[#e6007e] uppercase transition-colors">
                             Pesca di Beneficenza
                         </h3>
-                        <p class="text-xs text-gray-300">
+                        <p class="text-xs text-gray-700 leading-relaxed font-medium">
                             A cura dell'Associazione "Il Samaritano". Un gesto di solidarietà per sostenere i progetti sociali e di accoglienza locali.
                         </p>
-                        <div class="pt-2 text-[11px] text-gray-400 flex items-center gap-1.5 font-semibold">
-                            <i class="fa-solid fa-location-dot text-brand-magenta"></i> Corso Cesare Battisti
+                        <div class="pt-2 text-[11px] text-[#e6007e] flex items-center gap-1.5 font-bold uppercase">
+                            <i class="fa-solid fa-location-dot"></i> Corso Cesare Battisti
                         </div>
                     </div>
                 </div>
 
                 <!-- Brain Run Card -->
-                <div class="glass-card p-5 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-brand-cyan/50 transition-all">
-                    <div class="absolute top-0 right-0 px-3 py-1 bg-brand-cyan text-black font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
+                <div class="bg-white p-6 rounded-2xl border-2 border-[#e6007e]/20 relative overflow-hidden group hover:border-[#e6007e] transition-all shadow-pop">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-[#cbe02d] text-[#222] font-black text-[10px] uppercase rounded-bl-xl tracking-wider">
                         15 - 23 MAGGIO 2027
                     </div>
-                    <div class="space-y-2">
-                        <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center text-brand-cyan text-lg">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#cbe02d]/40 flex items-center justify-center text-[#e6007e] text-lg">
                             <i class="fa-solid fa-person-running"></i>
                         </div>
-                        <h3 class="font-display text-lg font-bold text-white group-hover:text-brand-cyan transition-colors">
+                        <h3 class="font-black text-lg text-[#222] group-hover:text-[#e6007e] uppercase transition-colors">
                             BRAIN RUN & Trofeo Moretti
                         </h3>
-                        <p class="text-xs text-gray-300">
+                        <p class="text-xs text-gray-700 leading-relaxed font-medium">
                             Una settimana per la sensibilizzazione sulla S.L.A. Conclusione il 23 Maggio 2027 con il 6° Trofeo Podistica Moretti Corva.
                         </p>
-                        <div class="pt-2 text-[11px] text-gray-400 flex items-center gap-1.5 font-semibold">
-                            <i class="fa-solid fa-flag-checkered text-brand-cyan"></i> Corva di Porto Sant'Elpidio
+                        <div class="pt-2 text-[11px] text-[#e6007e] flex items-center gap-1.5 font-bold uppercase">
+                            <i class="fa-solid fa-flag-checkered"></i> Corva di Porto Sant'Elpidio
                         </div>
                     </div>
                 </div>
@@ -413,86 +387,101 @@
             </div>
         </section>
 
+        <!-- PARTNERS SECTION (Identical to index.html) -->
+        <section class="partners py-10 text-center border-t-2 border-[#e6007e]/20 mt-8">
+            <h2 class="text-[#e6007e] font-black uppercase text-sm md:text-base tracking-wider mb-6">
+                Con il patrocinio e il sostegno di
+            </h2>
+            <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                <div class="font-bold text-[#e6007e] text-xs uppercase border-2 border-[#e6007e] bg-white px-4 py-2 rounded-lg shadow-sm">Comune di Porto Sant'Elpidio</div>
+                <div class="font-bold text-[#e6007e] text-xs uppercase border-2 border-[#e6007e] bg-white px-4 py-2 rounded-lg shadow-sm">Regione Marche</div>
+                <div class="font-bold text-[#e6007e] text-xs uppercase border-2 border-[#e6007e] bg-white px-4 py-2 rounded-lg shadow-sm">Provincia di Fermo</div>
+                <div class="font-bold text-[#e6007e] text-xs uppercase border-2 border-[#e6007e] bg-white px-4 py-2 rounded-lg shadow-sm">Fondazione Cassa di Risparmio di Fermo</div>
+                <div class="font-bold text-[#e6007e] text-xs uppercase border-2 border-[#e6007e] bg-white px-4 py-2 rounded-lg shadow-sm">CNA Artigiani Imprenditori Fermo</div>
+                <div class="font-bold text-[#e6007e] text-xs uppercase border-2 border-[#e6007e] bg-white px-4 py-2 rounded-lg shadow-sm">Media Partner Radio FM</div>
+            </div>
+        </section>
+
     </main>
 
     <!-- EVENT DETAIL MODAL -->
-    <div id="eventModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
-        <div class="relative w-full max-w-xl max-h-[90vh] overflow-y-auto glass-panel border border-white/15 rounded-3xl p-6 space-y-5 shadow-2xl">
+    <div id="eventModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity">
+        <div class="relative w-full max-w-xl max-h-[90vh] overflow-y-auto bg-white border-4 border-[#cbe02d] rounded-3xl p-6 md:p-8 space-y-5 shadow-2xl">
             
             <!-- Close Button -->
-            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white flex items-center justify-center transition-all">
+            <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-gray-100 hover:bg-[#e6007e] text-gray-700 hover:text-white flex items-center justify-center transition-all">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
 
             <!-- Modal Header / Category -->
-            <div class="space-y-2">
+            <div class="space-y-2 pr-8">
                 <div class="flex flex-wrap items-center gap-2">
-                    <span id="modalCategory" class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-acid text-black">
+                    <span id="modalCategory" class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-[#cbe02d] text-[#222]">
                         Categoria
                     </span>
-                    <span id="modalHighlightBadge" class="hidden px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-magenta text-white">
+                    <span id="modalHighlightBadge" class="hidden px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-[#e6007e] text-white">
                         <i class="fa-solid fa-star"></i> Evento Clou
                     </span>
                 </div>
 
-                <h3 id="modalTitle" class="font-display text-2xl md:text-3xl font-black text-white leading-tight">
+                <h3 id="modalTitle" class="font-black text-2xl md:text-3xl text-[#222] uppercase leading-tight">
                     Titolo Evento
                 </h3>
             </div>
 
             <!-- Date, Time & Location Box -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 text-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 rounded-2xl bg-[#cbe02d]/25 border border-[#cbe02d] text-xs">
                 <div class="flex items-start gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-brand-acid/10 border border-brand-acid/30 text-brand-acid flex items-center justify-center shrink-0">
+                    <div class="w-8 h-8 rounded-lg bg-white text-[#e6007e] flex items-center justify-center shrink-0 shadow-sm">
                         <i class="fa-regular fa-clock"></i>
                     </div>
                     <div>
-                        <p class="text-gray-400 font-medium">Data e Ora</p>
-                        <p id="modalDateTime" class="font-bold text-white text-sm">--</p>
+                        <p class="text-gray-600 font-bold uppercase text-[10px]">Data e Ora</p>
+                        <p id="modalDateTime" class="font-black text-[#222] text-sm uppercase">--</p>
                     </div>
                 </div>
 
                 <div class="flex items-start gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-brand-magenta/10 border border-brand-magenta/30 text-brand-magenta flex items-center justify-center shrink-0">
+                    <div class="w-8 h-8 rounded-lg bg-white text-[#e6007e] flex items-center justify-center shrink-0 shadow-sm">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <div>
-                        <p class="text-gray-400 font-medium">Luogo</p>
-                        <p id="modalLocation" class="font-bold text-white text-sm">--</p>
+                        <p class="text-gray-600 font-bold uppercase text-[10px]">Luogo</p>
+                        <p id="modalLocation" class="font-black text-[#222] text-sm">--</p>
                     </div>
                 </div>
             </div>
 
             <!-- Modal Description -->
             <div class="space-y-2">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400">Dettagli dell'evento</h4>
-                <p id="modalDescription" class="text-sm text-gray-200 leading-relaxed">
+                <h4 class="text-xs font-black uppercase tracking-wider text-[#e6007e]">Dettagli dell'evento</h4>
+                <p id="modalDescription" class="text-sm text-gray-700 leading-relaxed font-medium">
                     Descrizione completa.
                 </p>
             </div>
 
             <!-- Action Buttons Grid -->
-            <div class="space-y-2 pt-2 border-t border-white/10">
+            <div class="space-y-2 pt-3 border-t border-gray-100">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <!-- Google Calendar Link -->
-                    <a id="modalCalendarBtn" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-brand-acid text-black hover:bg-brand-acidHover font-bold text-xs flex items-center justify-center gap-2 transition-all">
+                    <a id="modalCalendarBtn" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-full bg-[#e6007e] text-white hover:bg-[#b80064] font-black text-xs uppercase flex items-center justify-center gap-2 transition-all shadow-sm">
                         <i class="fa-regular fa-calendar-plus"></i> Aggiungi a Google Cal
                     </a>
 
                     <!-- Google Maps Directions -->
-                    <a id="modalMapBtn" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 border border-white/10 transition-all">
-                        <i class="fa-solid fa-map-location-dot text-brand-magenta"></i> Mappa & Indicazioni
+                    <a id="modalMapBtn" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-full bg-white hover:bg-gray-50 text-[#e6007e] font-black text-xs uppercase flex items-center justify-center gap-2 border-2 border-[#e6007e] transition-all shadow-sm">
+                        <i class="fa-solid fa-map-location-dot"></i> Mappa & Indicazioni
                     </a>
                 </div>
 
                 <div class="grid grid-cols-2 gap-2">
                     <!-- Share WhatsApp -->
-                    <a id="modalWhatsappBtn" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 font-semibold text-xs flex items-center justify-center gap-2 border border-emerald-500/30 transition-all">
+                    <a id="modalWhatsappBtn" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm">
                         <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
                     </a>
 
                     <!-- Copy Event Link -->
-                    <button id="modalCopyBtn" onclick="copyEventLink()" class="py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 font-semibold text-xs flex items-center justify-center gap-2 border border-white/10 transition-all">
+                    <button id="modalCopyBtn" onclick="copyEventLink()" class="py-2 px-3 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold text-xs flex items-center justify-center gap-2 transition-all">
                         <i class="fa-solid fa-link text-sm"></i> Copia Link
                     </button>
                 </div>
@@ -501,66 +490,63 @@
         </div>
     </div>
 
-    <!-- FOOTER & ORGANIZER INFO -->
-    <footer class="w-full glass-panel border-t border-white/10 mt-12 py-8 px-4 text-xs text-gray-400">
+    <!-- FOOTER (Matching index.html) -->
+    <footer class="w-full bg-[#e6007e] text-white mt-12 py-10 px-4 text-xs font-bold text-center">
         <div class="max-w-6xl mx-auto space-y-6">
-            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-                
                 <!-- Col 1: Organizer Info -->
                 <div class="space-y-2">
-                    <h4 class="font-display font-black text-sm text-white uppercase tracking-wider">
+                    <h4 class="font-black text-sm uppercase tracking-wider text-[#cbe02d]">
                         Organizzazione
                     </h4>
-                    <p class="font-semibold text-gray-300">Associazione Culturale San Crispino Eventi</p>
-                    <p class="flex items-center justify-center md:justify-start gap-1.5 text-gray-400">
-                        <i class="fa-solid fa-location-dot text-brand-acid"></i> Via Solferino 72, 63821 Porto Sant'Elpidio (FM)
+                    <p class="text-white">Associazione Culturale San Crispino Eventi</p>
+                    <p class="flex items-center justify-center md:justify-start gap-1.5 text-white/90">
+                        <i class="fa-solid fa-location-dot text-[#cbe02d]"></i> Via Solferino 72, 63821 Porto Sant'Elpidio (FM)
                     </p>
-                    <p class="flex items-center justify-center md:justify-start gap-1.5 text-gray-400">
-                        <i class="fa-solid fa-envelope text-brand-magenta"></i> sancrispinoeventi@gmail.com
+                    <p class="flex items-center justify-center md:justify-start gap-1.5 text-white/90">
+                        <i class="fa-solid fa-envelope text-[#cbe02d]"></i> sancrispinoeventi@gmail.com
                     </p>
                 </div>
 
                 <!-- Col 2: Social Links -->
                 <div class="space-y-2">
-                    <h4 class="font-display font-black text-sm text-white uppercase tracking-wider">
+                    <h4 class="font-black text-sm uppercase tracking-wider text-[#cbe02d]">
                         Seguici Sui Social
                     </h4>
-                    <p class="text-gray-400">Resta aggiornato su cambi programma ed eventi speciali live.</p>
+                    <p class="text-white/90">Resta aggiornato su cambi programma ed eventi speciali live.</p>
                     <div class="flex items-center justify-center md:justify-start gap-3 pt-1">
-                        <a href="https://www.facebook.com" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-acid hover:border-brand-acid transition-all">
+                        <a href="https://www.facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#e6007e] flex items-center justify-center transition-all">
                             <i class="fa-brands fa-facebook-f text-sm"></i>
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-magenta hover:border-brand-magenta transition-all">
+                        <a href="https://www.instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#e6007e] flex items-center justify-center transition-all">
                             <i class="fa-brands fa-instagram text-sm"></i>
                         </a>
-                        <a href="https://www.tiktok.com" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-brand-cyan hover:border-brand-cyan transition-all">
+                        <a href="https://www.tiktok.com" target="_blank" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#e6007e] flex items-center justify-center transition-all">
                             <i class="fa-brands fa-tiktok text-sm"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Col 3: Patron Saint & City badge -->
+                <!-- Col 3: Copyright -->
                 <div class="space-y-2 md:text-right flex flex-col items-center md:items-end justify-center">
-                    <div class="p-3 rounded-2xl bg-gradient-to-r from-brand-acid/10 to-brand-magenta/10 border border-white/10 max-w-xs text-center md:text-right">
-                        <p class="font-display font-extrabold text-white text-sm">Porto Sant'Elpidio 2026</p>
-                        <p class="text-[11px] text-gray-400">Città delle calzature e della grande festa di ottobre</p>
+                    <div class="p-3 rounded-2xl bg-white/10 border border-white/20 max-w-xs text-center md:text-right">
+                        <p class="font-black text-sm uppercase text-[#cbe02d]">Porto Sant'Elpidio 2026</p>
+                        <p class="text-[11px] text-white/90">Città delle calzature e della grande festa di ottobre</p>
                     </div>
-                    <p class="text-[10px] text-gray-500 pt-2">© 2026 SanCrispino2026. Tutti i diritti riservati.</p>
+                    <p class="text-[11px] text-white/80 pt-2">&copy; 2026 San Crispino Eventi – Città di Porto Sant'Elpidio</p>
                 </div>
-
             </div>
-
         </div>
     </footer>
 
     <!-- TOAST NOTIFICATION CONTAINER -->
-    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 glass-panel px-4 py-3 rounded-2xl border border-brand-acid/50 text-white font-semibold text-xs flex items-center gap-2.5 shadow-2xl pointer-events-none">
-        <i id="toastIcon" class="fa-solid fa-circle-check text-brand-acid text-base"></i>
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-white px-5 py-3 rounded-2xl border-2 border-[#e6007e] text-[#222] font-black text-xs flex items-center gap-2.5 shadow-2xl pointer-events-none">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-[#e6007e] text-base"></i>
         <span id="toastMsg">Messaggio di notifica</span>
     </div>
 
     <script>
+
         // COMPLETE EVENT DATABASE FOR SAN CRISPINO 2026
         const EVENTS = [
             // FRIDAY 2 OCT
@@ -1213,17 +1199,17 @@
                 button.id = `datePill-${d.dateStr}`;
                 button.onclick = () => selectDate(d.dateStr);
 
-                const highlightStyle = d.isHighlight ? 'border-brand-magenta/60 text-brand-magenta' : 'border-white/10 text-gray-300';
+                const highlightStyle = d.isHighlight ? 'border-[#e6007e] text-[#e6007e]' : 'border-black/5 text-[#222]';
                 const opacityStyle = d.hasEvent ? 'opacity-100' : 'opacity-40';
 
-                button.className = `date-ribbon-item shrink-0 px-3.5 py-2 rounded-2xl border ${highlightStyle} ${opacityStyle} bg-white/5 hover:bg-white/10 text-xs font-semibold flex flex-col items-center justify-center min-w-[62px] transition-all relative`;
+                button.className = `date-ribbon-item shrink-0 px-3.5 py-2 rounded-2xl border-2 ${highlightStyle} ${opacityStyle} bg-white hover:border-[#e6007e] text-xs font-bold flex flex-col items-center justify-center min-w-[62px] transition-all relative shadow-sm`;
 
                 button.innerHTML = `
-                    <span class="text-[9px] uppercase tracking-wider text-gray-400 font-bold">${d.dayName}</span>
-                    <span class="font-extrabold text-base leading-tight">${d.dayNum}</span>
-                    <span class="text-[9px] uppercase tracking-wider text-gray-400">${d.monthStr}</span>
-                    ${d.isHighlight ? '<span class="absolute -top-1 -right-1 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-magenta opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-magenta"></span></span>' : ''}
-                    ${d.hasEvent && !d.isHighlight ? '<span class="w-1.5 h-1.5 rounded-full bg-brand-acid mt-0.5"></span>' : ''}
+                    <span class="text-[9px] uppercase tracking-wider text-gray-500 font-bold">${d.dayName}</span>
+                    <span class="font-black text-base leading-tight">${d.dayNum}</span>
+                    <span class="text-[9px] uppercase tracking-wider text-gray-500 font-bold">${d.monthStr}</span>
+                    ${d.isHighlight ? '<span class="absolute -top-1 -right-1 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e6007e] opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#e6007e]"></span></span>' : ''}
+                    ${d.hasEvent && !d.isHighlight ? '<span class="w-2 h-2 rounded-full bg-[#cbe02d] border border-black/20 mt-0.5"></span>' : ''}
                 `;
 
                 ribbon.appendChild(button);
@@ -1244,7 +1230,7 @@
                 const btn = document.createElement("button");
                 btn.id = `catPill-${cat.id}`;
                 btn.onclick = () => selectCategory(cat.id);
-                btn.className = `shrink-0 px-3 py-1.5 rounded-xl border border-white/10 text-xs font-semibold text-gray-300 hover:text-white hover:bg-white/10 transition-all ${cat.id === 'ALL' ? 'bg-white/10 border-brand-acid/40 text-brand-acid' : ''}`;
+                btn.className = `shrink-0 px-3.5 py-1.5 rounded-full border-2 border-black/5 text-xs font-bold uppercase text-[#222] bg-white hover:border-[#e6007e] hover:text-[#e6007e] transition-all ${cat.id === 'ALL' ? '!bg-[#e6007e] !text-white !border-[#e6007e] shadow-sm' : ''}`;
                 btn.innerText = cat.name;
                 container.appendChild(btn);
             });
@@ -1292,12 +1278,12 @@
             showFavoritesOnly = false;
 
             document.querySelectorAll('#categoryPills button').forEach(btn => {
-                btn.classList.remove('bg-white/10', 'border-brand-acid/40', 'text-brand-acid');
+                btn.classList.remove('!bg-[#e6007e]', '!text-white', '!border-[#e6007e]', 'shadow-sm');
             });
 
             const activeCatBtn = document.getElementById(`catPill-${catId}`);
             if (activeCatBtn) {
-                activeCatBtn.classList.add('bg-white/10', 'border-brand-acid/40', 'text-brand-acid');
+                activeCatBtn.classList.add('!bg-[#e6007e]', '!text-white', '!border-[#e6007e]', 'shadow-sm');
             }
 
             renderEvents();
@@ -1335,10 +1321,10 @@
 
             const favBtn = document.getElementById("favTabBtn");
             if (showFavoritesOnly) {
-                favBtn.classList.add('bg-brand-magenta/20', 'border-brand-magenta', 'text-white');
+                favBtn.classList.add('!bg-[#e6007e]', '!text-white');
                 window.location.hash = "preferiti";
             } else {
-                favBtn.classList.remove('bg-brand-magenta/20', 'border-brand-magenta', 'text-white');
+                favBtn.classList.remove('!bg-[#e6007e]', '!text-white');
                 history.replaceState(null, null, ' ');
             }
 
@@ -1408,7 +1394,7 @@
 
             // Update View Heading Text
             if (showFavoritesOnly) {
-                heading.innerHTML = `<i class="fa-solid fa-heart text-brand-magenta"></i> I tuoi Preferiti`;
+                heading.innerHTML = `<i class="fa-solid fa-heart text-[#e6007e]"></i> I tuoi Preferiti`;
             } else if (activeDate === "HIGHLIGHTS") {
                 heading.innerHTML = `⭐ Eventi in Evidenza`;
             } else if (activeDate !== "ALL") {
@@ -1443,58 +1429,58 @@
                 const isFav = favorites.includes(evt.id);
 
                 const card = document.createElement("div");
-                card.className = `glass-card rounded-2xl border p-5 flex flex-col justify-between space-y-4 hover:border-brand-acid/40 transition-all duration-300 relative group ${evt.highlight ? 'border-brand-magenta/40 shadow-neon-magenta/20' : 'border-white/10'}`;
+                card.className = `bg-white rounded-2xl border-2 p-5 flex flex-col justify-between space-y-4 shadow-sm hover:shadow-lg transition-all duration-300 relative group ${evt.highlight ? 'border-[#e6007e] ring-2 ring-[#e6007e]/20' : 'border-black/5 hover:border-[#e6007e]'}`;
 
                 card.innerHTML = `
                     <div class="space-y-3">
                         <!-- Top Metadata & Favorite -->
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2">
-                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-white/10 text-brand-acid border border-white/10">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-[#cbe02d] text-[#222]">
                                     ${evt.category}
                                 </span>
-                                ${evt.highlight ? '<span class="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-magenta text-white flex items-center gap-1 shadow-neon-magenta"><i class="fa-solid fa-star text-[8px]"></i> Clou</span>' : ''}
+                                ${evt.highlight ? '<span class="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-[#e6007e] text-white flex items-center gap-1 shadow-sm"><i class="fa-solid fa-star text-[8px]"></i> Clou</span>' : ''}
                             </div>
 
-                            <button onclick="toggleFavorite('${evt.id}', event)" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 hover:text-brand-magenta transition-all">
-                                <i class="${isFav ? 'fa-solid text-brand-magenta scale-110' : 'fa-regular'} fa-heart text-sm"></i>
+                            <button onclick="toggleFavorite('${evt.id}', event)" class="p-2 rounded-full bg-gray-50 hover:bg-gray-100 text-gray-400 hover:text-[#e6007e] transition-all">
+                                <i class="${isFav ? 'fa-solid text-[#e6007e] scale-110' : 'fa-regular'} fa-heart text-sm"></i>
                             </button>
                         </div>
 
                         <!-- Date & Time Row -->
-                        <div class="flex items-center gap-3 text-xs font-bold text-gray-300">
-                            <span class="text-brand-acid flex items-center gap-1">
+                        <div class="flex items-center gap-3 text-xs font-bold text-[#e6007e]">
+                            <span class="flex items-center gap-1">
                                 <i class="fa-regular fa-calendar-check"></i> ${evt.dayDisplay}
                             </span>
-                            <span class="text-gray-500">•</span>
-                            <span class="text-gray-300 flex items-center gap-1">
+                            <span class="text-gray-300">•</span>
+                            <span class="text-gray-800 flex items-center gap-1">
                                 <i class="fa-regular fa-clock"></i> ${evt.time}
                             </span>
                         </div>
 
                         <!-- Title -->
-                        <h3 class="font-display font-extrabold text-lg text-white group-hover:text-brand-acid transition-colors leading-snug">
+                        <h3 class="font-display font-black text-lg text-[#222] group-hover:text-[#e6007e] transition-colors leading-snug uppercase">
                             ${evt.title}
                         </h3>
 
                         <!-- Location -->
-                        <p class="text-xs text-gray-400 flex items-start gap-1.5">
-                            <i class="fa-solid fa-location-dot text-brand-magenta mt-0.5 shrink-0"></i>
+                        <p class="text-xs text-gray-600 flex items-start gap-1.5 font-medium">
+                            <i class="fa-solid fa-location-dot text-[#e6007e] mt-0.5 shrink-0"></i>
                             <span>${evt.location}</span>
                         </p>
 
                         <!-- Short Description -->
-                        <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed">
+                        <p class="text-xs text-gray-700 line-clamp-2 leading-relaxed font-medium">
                             ${evt.description}
                         </p>
                     </div>
 
                     <!-- Bottom Action Bar -->
-                    <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
-                        <button onclick="openModal('${evt.id}')" class="w-full py-2 px-3 rounded-xl bg-white/10 hover:bg-brand-acid hover:text-black font-bold text-xs text-white transition-all flex items-center justify-center gap-1.5">
+                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between gap-2">
+                        <button onclick="openModal('${evt.id}')" class="w-full py-2.5 px-3 rounded-full bg-[#e6007e] hover:bg-[#b80064] text-white font-bold text-xs uppercase transition-all flex items-center justify-center gap-1.5 shadow-sm">
                             <i class="fa-solid fa-circle-info"></i> Dettagli & Info
                         </button>
-                        <button onclick="shareEvent('${evt.id}', event)" class="p-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 hover:text-brand-acid transition-all text-xs" title="Condividi">
+                        <button onclick="shareEvent('${evt.id}', event)" class="p-2.5 px-3 rounded-full border-2 border-[#e6007e]/30 bg-white hover:bg-gray-50 text-[#e6007e] transition-all text-xs" title="Condividi">
                             <i class="fa-solid fa-share-nodes"></i>
                         </button>
                     </div>
@@ -1510,10 +1496,10 @@
             const index = favorites.indexOf(id);
             if (index > -1) {
                 favorites.splice(index, 1);
-                showToast("Rimosso dai preferiti", "fa-heart-crack", "text-brand-magenta");
+                showToast("Rimosso dai preferiti", "fa-heart-crack", "text-[#e6007e]");
             } else {
                 favorites.push(id);
-                showToast("Aggiunto ai tuoi Preferiti!", "fa-heart", "text-brand-magenta");
+                showToast("Aggiunto ai tuoi Preferiti!", "fa-heart", "text-[#e6007e]");
             }
 
             localStorage.setItem('sc2026_favs', JSON.stringify(favorites));
@@ -1556,7 +1542,7 @@
             document.getElementById("modalMapBtn").href = mapUrl;
 
             // WhatsApp Share
-            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37° Festa di San Crispino a Porto Sant'Elpidio!`);
+            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37ª Festa di San Crispino a Porto Sant'Elpidio!`);
             document.getElementById("modalWhatsappBtn").href = `https://wa.me/?text=${waText}`;
 
             document.getElementById("eventModal").classList.remove("hidden");
@@ -1600,14 +1586,14 @@
                 document.body.removeChild(input);
             }
 
-            showToast("Link copiato negli appunti!", "fa-link", "text-brand-acid");
+            showToast("Link copiato negli appunti!", "fa-link", "text-[#e6007e]");
         }
 
         // SHARE WEBSITE
         function shareWebsite() {
             const shareData = {
-                title: "SanCrispino2026 - Porto Sant'Elpidio",
-                text: "Programma ufficiale della 37° Festa del Patrono San Crispino a Porto Sant'Elpidio (2 Ottobre - 8 Novembre 2026)!",
+                title: "San Crispino 2026 - Porto Sant'Elpidio",
+                text: "Programma ufficiale della 37ª Festa del Patrono San Crispino a Porto Sant'Elpidio (2 Ottobre - 8 Novembre 2026)!",
                 url: window.location.href,
             };
 
@@ -1615,7 +1601,7 @@
                 navigator.share(shareData).catch(() => {});
             } else {
                 copyTextToClipboard(window.location.href);
-                showToast("Link festa copiato negli appunti!", "fa-share-nodes", "text-brand-acid");
+                showToast("Link festa copiato negli appunti!", "fa-share-nodes", "text-[#e6007e]");
             }
         }
 
@@ -1633,7 +1619,7 @@
                 }).catch(() => {});
             } else {
                 copyTextToClipboard(url);
-                showToast("Link evento copiato!", "fa-share-nodes", "text-brand-acid");
+                showToast("Link evento copiato!", "fa-share-nodes", "text-[#e6007e]");
             }
         }
 
@@ -1678,7 +1664,7 @@
         }
 
         // SHOW TOAST NOTIFICATION
-        function showToast(message, iconClass = "fa-circle-check", colorClass = "text-brand-acid") {
+        function showToast(message, iconClass = "fa-circle-check", colorClass = "text-[#e6007e]") {
             const toast = document.getElementById("toast");
             const toastMsg = document.getElementById("toastMsg");
             const toastIcon = document.getElementById("toastIcon");
