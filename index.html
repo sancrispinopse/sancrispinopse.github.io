@@ -1544,7 +1544,7 @@
             document.getElementById("modalMapBtn").href = mapUrl;
 
             // WhatsApp Share
-            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37ª Festa di San Crispino a Porto Sant'Elpidio!\n https://sancrispinopse.github.io`);
+            const waText = encodeURIComponent(`📍 *${evt.title}*\n🗓️ ${evt.dayDisplay} - Ore ${evt.time}\n📌 ${evt.location}\n\nScopri tutti gli eventi della 37ª Festa di San Crispino a Porto Sant'Elpidio!\n 🌐 https://sancrispinopse.github.io`);
             document.getElementById("modalWhatsappBtn").href = `https://wa.me/?text=${waText}`;
 
             document.getElementById("eventModal").classList.remove("hidden");
